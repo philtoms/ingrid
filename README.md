@@ -33,7 +33,7 @@ spreadsheet {
 
 ## Agreement
 
-The converse of rational behavior is of course irrational behavior. But that phrase has many connotations that are not appropriate to software development. In the terminology of applied intentionality, there is only rationalization. A failure to rationalize an intentionality is simply a failure to reach agreement. Agreement with the owner of the software, or the developer, or even agreement throughout the team, is established in Ingrid, through agreement at the code level.
+The converse of rational behavior is of course irrational behavior. But that phrase has many connotations that are not appropriate to software development. In the terminology of applied intentionality, there is only rationalization. A failure to rationalize an intentionality is simply a failure to reach agreement. Agreement with the owner of the software, or the developer, or even agreement throughout the team, is established in Ingrid through correlated agreement at the code level.
 
 You'll need to do a bit of rationalizing of your own before we can reach agreement over what this code is doing.
 
@@ -103,7 +103,10 @@ Semantic markers (SMs) are recognizable patterns of coded intentionality that ar
 The relevant SMs in this example include HTML markers. Third-parties relevant to this example include code reviewers with an HTML perspective, and the browser (suitably primed with a preloaded context). Both kinds of third-party will identify these SMs as relating to something like the following:
 
 ```html
-html/body html/body/header html/body/header/input#todo html/body/main
+html/body
+html/body/header
+html/body/header/input#todo
+html/body/main
 html/body/footer ...
 ```
 
