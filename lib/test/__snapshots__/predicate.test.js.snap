@@ -1,0 +1,1905 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`predicate snapshot 1`] = `
+Object {
+  "api": Object {},
+  "ast": Array [
+    Object {
+      "intentions": Array [
+        Object {
+          "intent": "is",
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "ident": "selector",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+        Object {
+          "intent": "block",
+          "selector": Array [
+            Object {
+              "intentions": Array [],
+              "selectors": Array [
+                Object {
+                  "rule": true,
+                  "token": Object {
+                    "grammar": Object {
+                      "rule": "arg",
+                      "tokens": Array [
+                        "tag",
+                      ],
+                    },
+                    "ident": "arg",
+                    "type": "grammar",
+                  },
+                },
+              ],
+            },
+            Object {
+              "intentions": Array [
+                Object {
+                  "intent": "block",
+                  "selector": Array [
+                    Object {
+                      "intentions": Array [
+                        Object {
+                          "intent": "is",
+                          "selector": Array [
+                            Object {
+                              "message": null,
+                              "token": Object {
+                                "ident": 2,
+                                "quantifier": null,
+                                "rule": "token",
+                                "type": "literal",
+                              },
+                            },
+                          ],
+                        },
+                        Object {
+                          "intent": "if",
+                          "selector": Array [
+                            Object {
+                              "message": Object {
+                                "selector": Array [
+                                  Object {
+                                    "alias": null,
+                                    "message": Object {
+                                      "selector": Array [
+                                        Object {
+                                          "message": null,
+                                          "token": Object {
+                                            "ident": "=",
+                                            "quantifier": null,
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                        Object {
+                                          "message": null,
+                                          "token": Object {
+                                            "ident": "*",
+                                            "quantifier": null,
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                        Object {
+                                          "alias": null,
+                                          "message": null,
+                                          "quantifier": null,
+                                          "token": Object {
+                                            "ident": Object {
+                                              "message": null,
+                                              "token": Object {
+                                                "ident": "op",
+                                                "quantifier": null,
+                                                "rule": "token",
+                                                "type": "tag",
+                                              },
+                                            },
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                      ],
+                                    },
+                                    "quantifier": null,
+                                    "token": Object {
+                                      "ident": "postfix",
+                                      "rule": "token",
+                                      "type": "bind",
+                                    },
+                                  },
+                                ],
+                              },
+                              "token": Object {
+                                "ident": "postfix",
+                                "quantifier": null,
+                                "rule": "token",
+                                "type": "tag",
+                              },
+                            },
+                          ],
+                        },
+                        Object {
+                          "intent": "is",
+                          "selector": Array [
+                            Object {
+                              "message": null,
+                              "token": Object {
+                                "ident": 1,
+                                "quantifier": null,
+                                "rule": "token",
+                                "type": "literal",
+                              },
+                            },
+                          ],
+                        },
+                        Object {
+                          "intent": "if",
+                          "selector": Array [
+                            Object {
+                              "message": Object {
+                                "selector": Array [
+                                  Object {
+                                    "alias": null,
+                                    "message": Object {
+                                      "selector": Array [
+                                        Object {
+                                          "message": null,
+                                          "token": Object {
+                                            "ident": "=",
+                                            "quantifier": null,
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                        Object {
+                                          "message": null,
+                                          "token": Object {
+                                            "ident": "+",
+                                            "quantifier": null,
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                        Object {
+                                          "alias": null,
+                                          "message": null,
+                                          "quantifier": null,
+                                          "token": Object {
+                                            "ident": Object {
+                                              "message": null,
+                                              "token": Object {
+                                                "ident": "op",
+                                                "quantifier": null,
+                                                "rule": "token",
+                                                "type": "tag",
+                                              },
+                                            },
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                      ],
+                                    },
+                                    "quantifier": null,
+                                    "token": Object {
+                                      "ident": "postfix",
+                                      "rule": "token",
+                                      "type": "bind",
+                                    },
+                                  },
+                                ],
+                              },
+                              "token": Object {
+                                "ident": "postfix",
+                                "quantifier": null,
+                                "rule": "token",
+                                "type": "tag",
+                              },
+                            },
+                          ],
+                        },
+                      ],
+                      "selectors": Array [
+                        Object {
+                          "message": null,
+                          "token": Object {
+                            "ident": "prec",
+                            "quantifier": null,
+                            "rule": "token",
+                            "type": "tag",
+                          },
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              "selectors": Array [
+                Object {
+                  "rule": true,
+                  "token": Object {
+                    "grammar": Object {
+                      "rule": "op",
+                      "tokens": Array [
+                        "'*'",
+                        "/",
+                        "'/'",
+                        "/",
+                        "'+'",
+                        "/",
+                        "'-'",
+                      ],
+                    },
+                    "ident": "op",
+                    "type": "grammar",
+                  },
+                },
+              ],
+            },
+            Object {
+              "intentions": Array [
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": null,
+                      "token": Object {
+                        "ident": "op",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": null,
+                      "token": Object {
+                        "ident": "predicate.op",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+                Object {
+                  "intent": "after",
+                  "selector": Array [
+                    Object {
+                      "message": Object {
+                        "selector": Array [
+                          Object {
+                            "alias": null,
+                            "message": Object {
+                              "selector": Array [
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "=",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "true",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "alias": null,
+                                  "message": null,
+                                  "quantifier": null,
+                                  "token": Object {
+                                    "ident": Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "push",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                              ],
+                            },
+                            "quantifier": null,
+                            "token": Object {
+                              "ident": "postfix",
+                              "rule": "token",
+                              "type": "bind",
+                            },
+                          },
+                        ],
+                      },
+                      "token": Object {
+                        "ident": "postfix",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+              ],
+              "selectors": Array [
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "opstack",
+                    "quantifier": "*",
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+              ],
+            },
+            Object {
+              "intentions": Array [
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": null,
+                      "token": Object {
+                        "ident": "arg",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": Object {
+                        "selector": Array [
+                          Object {
+                            "token": Object {
+                              "type": Symbol(empty),
+                            },
+                          },
+                        ],
+                      },
+                      "token": Object {
+                        "ident": "opstack.pop",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+                Object {
+                  "intent": "after",
+                  "selector": Array [
+                    Object {
+                      "message": Object {
+                        "selector": Array [
+                          Object {
+                            "alias": null,
+                            "message": Object {
+                              "selector": Array [
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "=",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "false",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "alias": null,
+                                  "message": null,
+                                  "quantifier": null,
+                                  "token": Object {
+                                    "ident": Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "push",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                              ],
+                            },
+                            "quantifier": null,
+                            "token": Object {
+                              "ident": "postfix",
+                              "rule": "token",
+                              "type": "bind",
+                            },
+                          },
+                        ],
+                      },
+                      "token": Object {
+                        "ident": "postfix",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+              ],
+              "selectors": Array [
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "parts",
+                    "quantifier": "+",
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+              ],
+            },
+            Object {
+              "intentions": Array [
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": Object {
+                        "selector": Array [
+                          Object {
+                            "alias": null,
+                            "message": Object {
+                              "selector": Array [
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": ">",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "opstack.top.prec",
+                                    "quantifier": null,
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                Object {
+                                  "alias": null,
+                                  "message": null,
+                                  "quantifier": null,
+                                  "token": Object {
+                                    "ident": Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "selector.op.prec",
+                                        "quantifier": "?",
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                              ],
+                            },
+                            "quantifier": null,
+                            "token": Object {
+                              "ident": "postfix",
+                              "rule": "token",
+                              "type": "bind",
+                            },
+                          },
+                        ],
+                      },
+                      "token": Object {
+                        "ident": "postfix",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+              ],
+              "selectors": Array [
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "push",
+                    "quantifier": null,
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+              ],
+            },
+            Object {
+              "intentions": Array [
+                Object {
+                  "intent": "is",
+                  "selector": Array [
+                    Object {
+                      "message": Object {
+                        "selector": Array [
+                          Object {
+                            "alias": null,
+                            "message": Object {
+                              "selector": Array [
+                                Object {
+                                  "message": null,
+                                  "token": Object {
+                                    "ident": "parts",
+                                    "quantifier": "*",
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                                null,
+                                Object {
+                                  "alias": null,
+                                  "message": null,
+                                  "quantifier": null,
+                                  "token": Object {
+                                    "ident": Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "selector.parts",
+                                        "quantifier": "*",
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    "rule": "token",
+                                    "type": "tag",
+                                  },
+                                },
+                              ],
+                            },
+                            "quantifier": null,
+                            "token": Object {
+                              "ident": "postfix",
+                              "rule": "token",
+                              "type": "bind",
+                            },
+                          },
+                        ],
+                      },
+                      "token": Object {
+                        "ident": "postfix",
+                        "quantifier": null,
+                        "rule": "token",
+                        "type": "tag",
+                      },
+                    },
+                  ],
+                },
+              ],
+              "selectors": Array [
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "predicate",
+                    "quantifier": null,
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "selectors": Array [
+        Object {
+          "rule": true,
+          "token": Object {
+            "grammar": Object {
+              "rule": "predicate",
+              "tokens": Array [
+                "arg",
+                "(",
+                "op",
+                "selector",
+                ")",
+                "?",
+              ],
+            },
+            "ident": "predicate",
+            "type": "grammar",
+          },
+        },
+      ],
+    },
+  ],
+  "exports": Array [],
+  "instructions": Object {
+    "*": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "+": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "=": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    ">": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "[object Object]": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "arg": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "false": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "opstack.pop": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "opstack.top.prec": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "predicate": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "predicate.op": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "predicate.op.prec": Object {
+      "immediate": Array [],
+      "temporal": Object {
+        "0": Array [
+          Object {
+            "op": "apply-literal",
+            "selector": 2,
+          },
+        ],
+        "1": Array [
+          Object {
+            "op": "push-literal",
+            "selector": "=",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": "*",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": Object {
+              "message": null,
+              "token": Object {
+                "ident": "op",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          },
+          Object {
+            "argCount": 3,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "argCount": 1,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+        ],
+        "3": Array [
+          Object {
+            "op": "push-literal",
+            "selector": "=",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": "+",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": Object {
+              "message": null,
+              "token": Object {
+                "ident": "op",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          },
+          Object {
+            "argCount": 3,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "argCount": 1,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+        ],
+      },
+    },
+    "predicate.opstack": Object {
+      "immediate": Array [],
+      "temporal": Object {
+        "1": Array [
+          Object {
+            "op": "apply-literal",
+            "quantifier": "*",
+            "selector": "predicate.op",
+          },
+        ],
+        "2": Array [
+          Object {
+            "op": "push-literal",
+            "selector": "=",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": "true",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": Object {
+              "message": null,
+              "token": Object {
+                "ident": "push",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          },
+          Object {
+            "argCount": 3,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "argCount": 1,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "op": "skip-if-false",
+          },
+          Object {
+            "op": "call-temporal",
+            "selector": "predicate.opstack",
+            "temporalIdx": 1,
+          },
+        ],
+      },
+    },
+    "predicate.parts": Object {
+      "immediate": Array [
+        Object {
+          "op": "apply-literal",
+          "quantifier": "+",
+          "selector": "arg",
+        },
+      ],
+      "temporal": Object {
+        "1": Array [
+          Object {
+            "argCount": 0,
+            "op": "call",
+            "selector": "opstack.pop",
+            "temporalIdx": 0,
+          },
+          Object {
+            "op": "pop-value",
+            "quantifier": "+",
+          },
+        ],
+        "2": Array [
+          Object {
+            "op": "push-literal",
+            "selector": "=",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": "false",
+          },
+          Object {
+            "op": "push-literal",
+            "selector": Object {
+              "message": null,
+              "token": Object {
+                "ident": "push",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          },
+          Object {
+            "argCount": 3,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "argCount": 1,
+            "op": "call-bind",
+            "selector": "postfix",
+            "temporalIdx": 0,
+          },
+          Object {
+            "op": "skip-if-false",
+          },
+          Object {
+            "op": "call-temporal",
+            "selector": "predicate.parts",
+            "temporalIdx": 1,
+          },
+        ],
+      },
+    },
+    "predicate.predicate": Object {
+      "immediate": Array [
+        Object {
+          "op": "push-value",
+          "selector": "predicate.parts",
+        },
+        Object {
+          "op": "push-literal",
+          "selector": Object {
+            "message": null,
+            "token": Object {
+              "ident": "selector.parts",
+              "quantifier": "*",
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        },
+        Object {
+          "argCount": 2,
+          "op": "call-bind",
+          "selector": "postfix",
+          "temporalIdx": 0,
+        },
+        Object {
+          "argCount": 1,
+          "op": "call-bind",
+          "selector": "postfix",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "pop-value",
+        },
+      ],
+      "temporal": Object {},
+    },
+    "predicate.push": Object {
+      "immediate": Array [
+        Object {
+          "op": "push-literal",
+          "selector": ">",
+        },
+        Object {
+          "op": "push-literal",
+          "selector": "opstack.top.prec",
+        },
+        Object {
+          "op": "push-literal",
+          "selector": Object {
+            "message": null,
+            "token": Object {
+              "ident": "selector.op.prec",
+              "quantifier": "?",
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        },
+        Object {
+          "argCount": 3,
+          "op": "call-bind",
+          "selector": "postfix",
+          "temporalIdx": 0,
+        },
+        Object {
+          "argCount": 1,
+          "op": "call-bind",
+          "selector": "postfix",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "pop-value",
+        },
+      ],
+      "temporal": Object {},
+    },
+    "true": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+  },
+  "selectors": Object {
+    "predicate": Object {
+      "aliasMap": Object {},
+      "id": "predicate",
+      "ident": "predicate",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "predicate",
+            "tokens": Array [
+              "arg",
+              "(",
+              "op",
+              "selector",
+              ")",
+              "?",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "selector",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "predicate.arg",
+                "predicate.op",
+                "predicate.opstack",
+                "predicate.parts",
+                "predicate.push",
+                "predicate.predicate",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.arg": Object {
+      "aliasMap": Object {},
+      "id": "predicate.arg",
+      "ident": "arg",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "arg",
+            "tokens": Array [
+              "tag",
+            ],
+          },
+          "intentions": Array [],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.op": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op",
+      "ident": "op",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "op",
+            "tokens": Array [
+              "'*'",
+              "/",
+              "'/'",
+              "/",
+              "'+'",
+              "/",
+              "'-'",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "predicate.op.prec",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.op.prec": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op.prec",
+      "ident": "prec",
+      "parentId": "predicate.op",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": 2,
+                  "message": null,
+                  "type": "literal",
+                },
+              ],
+            },
+            Object {
+              "intent": "if",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "=",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "*",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "op",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": 1,
+                  "message": null,
+                  "type": "literal",
+                },
+              ],
+            },
+            Object {
+              "intent": "if",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "=",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "+",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "op",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.opstack": Object {
+      "aliasMap": Object {},
+      "id": "predicate.opstack",
+      "ident": "opstack",
+      "parentId": "predicate",
+      "quantifier": "*",
+      "quantifierMap": Object {
+        "predicate.opstack": "*",
+      },
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "op",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "predicate.op",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "after",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "=",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "true",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "push",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.parts": Object {
+      "aliasMap": Object {},
+      "id": "predicate.parts",
+      "ident": "parts",
+      "parentId": "predicate",
+      "quantifier": "+",
+      "quantifierMap": Object {
+        "predicate.parts": "+",
+      },
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "arg",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "opstack.pop",
+                  "message": Array [],
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "after",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "=",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "false",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "push",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.predicate": Object {
+      "aliasMap": Object {},
+      "id": "predicate.predicate",
+      "ident": "predicate",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "parts",
+                          "message": null,
+                          "quantifier": "*",
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "selector.parts",
+                              "quantifier": "*",
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.push": Object {
+      "aliasMap": Object {},
+      "id": "predicate.push",
+      "ident": "push",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": ">",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "opstack.top.prec",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "selector.op.prec",
+                              "quantifier": "?",
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          "message": null,
+                          "type": "tag",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+  "statements": Object {
+    "*": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "*",
+      "ident": "*",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "+": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "+",
+      "ident": "+",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "=": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "=",
+      "ident": "=",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    ">": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": ">",
+      "ident": ">",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "[object Object]": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": Object {
+        "message": null,
+        "token": Object {
+          "ident": "push",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      "ident": Object {
+        "message": null,
+        "token": Object {
+          "ident": "push",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "arg": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "arg",
+      "ident": "arg",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "false": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "false",
+      "ident": "false",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "opstack.pop": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "opstack.pop",
+      "ident": "opstack.pop",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "opstack.top.prec": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "opstack.top.prec",
+      "ident": "opstack.top.prec",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "postfix": undefined,
+    "predicate": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [],
+      "message": Object {},
+    },
+    "predicate.op": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "predicate.op",
+      "ident": "predicate.op",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "predicate.op.prec": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.op.prec",
+              "selector": 2,
+              "type": "literal",
+            },
+          ],
+          "temporal": true,
+        },
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.op.prec",
+              "selector": 1,
+              "type": "literal",
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "message": Object {
+        "1": Array [
+          Object {
+            "arg": 1,
+            "id": "=",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": "*",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": Object {
+              "message": null,
+              "token": Object {
+                "ident": "op",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+            "type": "unresolved",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "id": "predicate.op.prec",
+            "temporalIdx": 0,
+            "type": "temporal-if",
+          },
+        ],
+        "3": Array [
+          Object {
+            "arg": 1,
+            "id": "=",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": "+",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": Object {
+              "message": null,
+              "token": Object {
+                "ident": "op",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+            "type": "unresolved",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "id": "predicate.op.prec",
+            "temporalIdx": 1,
+            "type": "temporal-if",
+          },
+        ],
+      },
+    },
+    "predicate.opstack": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.opstack",
+              "selector": "op",
+              "type": "bind",
+            },
+          ],
+        },
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.opstack",
+              "selector": "predicate.op",
+              "type": "unresolved",
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "message": Object {
+        "2": Array [
+          Object {
+            "arg": 1,
+            "id": "=",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": "true",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": Object {
+              "message": null,
+              "token": Object {
+                "ident": "push",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+            "type": "unresolved",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "id": "predicate.opstack",
+            "temporalIdx": 1,
+            "type": "temporal-after",
+          },
+        ],
+      },
+      "quantifier": "*",
+    },
+    "predicate.parts": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.parts",
+              "selector": "arg",
+              "type": "unresolved",
+            },
+          ],
+        },
+        Object {
+          "parts": Array [
+            Object {
+              "argCount": 0,
+              "id": "predicate.parts",
+              "selector": "opstack.pop",
+              "type": "apply-message",
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "message": Object {
+        "2": Array [
+          Object {
+            "arg": 1,
+            "id": "=",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": "false",
+            "type": "unresolved",
+          },
+          Object {
+            "arg": 1,
+            "id": Object {
+              "message": null,
+              "token": Object {
+                "ident": "push",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+            "type": "unresolved",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "id": "predicate.parts",
+            "temporalIdx": 1,
+            "type": "temporal-after",
+          },
+        ],
+      },
+      "quantifier": "+",
+    },
+    "predicate.predicate": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "arg": 1,
+              "id": "predicate.parts",
+              "type": "tag",
+            },
+            Object {
+              "arg": 1,
+              "id": Object {
+                "message": null,
+                "token": Object {
+                  "ident": "selector.parts",
+                  "quantifier": "*",
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+              "type": "unresolved",
+            },
+            Object {
+              "argCount": 2,
+              "id": "postfix",
+              "type": "call-message",
+            },
+            Object {
+              "argCount": 1,
+              "id": "predicate.predicate",
+              "selector": "postfix",
+              "type": "apply-message",
+            },
+          ],
+        },
+      ],
+      "message": Object {},
+    },
+    "predicate.push": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "arg": 1,
+              "id": ">",
+              "type": "unresolved",
+            },
+            Object {
+              "arg": 1,
+              "id": "opstack.top.prec",
+              "type": "unresolved",
+            },
+            Object {
+              "arg": 1,
+              "id": Object {
+                "message": null,
+                "token": Object {
+                  "ident": "selector.op.prec",
+                  "quantifier": "?",
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+              "type": "unresolved",
+            },
+            Object {
+              "argCount": 3,
+              "id": "postfix",
+              "type": "call-message",
+            },
+            Object {
+              "argCount": 1,
+              "id": "predicate.push",
+              "selector": "postfix",
+              "type": "apply-message",
+            },
+          ],
+        },
+      ],
+      "message": Object {},
+    },
+    "true": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "true",
+      "ident": "true",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+  },
+}
+`;

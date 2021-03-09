@@ -1,0 +1,1853 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compiler compound selectors immediate > temporal > immediate 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "2",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "3": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "3",
+      },
+    ],
+    "temporal": Object {
+      "1": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler compound selectors immediate > temporal 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "2",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+      },
+    ],
+    "temporal": Object {
+      "1": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler compound selectors part intentions 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler compound selectors temporal > immediate > temporal 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "3": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "3",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 2,
+        },
+      ],
+    },
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": "1",
+        },
+      ],
+      "2": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": "3",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler compound selectors temporal > immediate 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler compound selectors temporal > temporal 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "2": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "2",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "A1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+      "1": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler custom rules should output custom intention instructions 1`] = `
+Object {
+  "op": "apply-literal",
+  "selector": 123,
+}
+`;
+
+exports[`compiler intentions aggregate intention 1`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+]
+`;
+
+exports[`compiler intentions aggregate tag intentions 1`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+  Object {
+    "op": "apply-value",
+    "selector": "B1",
+  },
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+]
+`;
+
+exports[`compiler intentions nested intention 1`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+  Object {
+    "op": "apply-block",
+    "selector": "B1.B2",
+  },
+]
+`;
+
+exports[`compiler intentions nested intention 2`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1.A2",
+  },
+]
+`;
+
+exports[`compiler intentions self intention 1`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+]
+`;
+
+exports[`compiler intentions simple intention 1`] = `
+Array [
+  Object {
+    "op": "apply-value",
+    "selector": "A1",
+  },
+]
+`;
+
+exports[`compiler message handling single selector 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "A1.X",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A1.X": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "push-literal",
+        "selector": "X",
+      },
+      Object {
+        "argCount": 1,
+        "op": "call",
+        "selector": "A1",
+        "temporalIdx": 0,
+      },
+      Object {
+        "op": "pop-value",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "X": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler message handling single selector unresolved 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "A1.X",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A1.X": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "push-literal",
+        "selector": "Y",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "Y": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler messages aggregate tag messages 1`] = `
+Object {
+  "immediate": Array [],
+  "temporal": Object {
+    "0": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "B1",
+      },
+    ],
+    "1": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "B2",
+      },
+    ],
+  },
+}
+`;
+
+exports[`compiler messages aggregated nested value message 1`] = `
+Array [
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "B1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "argCount": 2,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler messages empty message 1`] = `
+Array [
+  Object {
+    "argCount": 0,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler messages multiple message 1`] = `
+Array [
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "argCount": 2,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler messages nested value message 1`] = `
+Array [
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "B1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "B1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler messages value message 1`] = `
+Array [
+  Object {
+    "op": "push-value",
+    "selector": "B1",
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler quantifier one or more tag values 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "3": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "quantifier": "+",
+        "selector": "1",
+      },
+      Object {
+        "op": "apply-literal",
+        "quantifier": "+",
+        "selector": "2",
+      },
+      Object {
+        "op": "apply-literal",
+        "quantifier": "+",
+        "selector": "3",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler quantifier slotted intentional values 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "3": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+        "slot": 0,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+        "slot": 1,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "3",
+        "slot": 2,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler quantifier slotted intentional values overspill 1`] = `
+Object {
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "3": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+        "slot": 0,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+        "slot": 1,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as aggregate reference 1`] = `
+Object {
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "456": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A2": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "456",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "A1",
+      },
+      Object {
+        "op": "apply-value",
+        "selector": "A2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as aggregate tag 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "456": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "456",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as aggregate temporal reference 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B",
+        },
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler regex selectors as aggregate temporal reference with message 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "A2": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A2",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler regex selectors as block tag 1`] = `
+Object {
+  "/B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "A1.B",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A1.B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as message reference 1`] = `
+Object {
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "B": Object {
+    "immediate": Array [
+      Object {
+        "op": "push-value",
+        "selector": "A1",
+      },
+      Object {
+        "argCount": 1,
+        "op": "call",
+        "selector": "A1",
+        "temporalIdx": 0,
+      },
+      Object {
+        "op": "pop-value",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as reference 1`] = `
+Object {
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "A1",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as sibling tag 1`] = `
+Object {
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "A.A1",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A./B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A.A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "A.A1.B",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A.A1.B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as tag 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as temporal message reference 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "B": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B",
+        },
+      ],
+      "1": Array [
+        Object {
+          "op": "push-value",
+          "selector": "A1",
+        },
+        Object {
+          "argCount": 1,
+          "op": "call",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "skip-if-false",
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler regex selectors as temporal reference 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B",
+        },
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler regex selectors as temporal reference with message 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B",
+        },
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler regex selectors should accumalate intentions 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "/B": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "C": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "A1",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "A2",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "B1",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "B2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors should accumalate selectors 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "/B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "AB": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "1",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": "2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors should be discoverable in child-sibling-parent order 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "/B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B1",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "/B./B1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "/B./B2": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "/B.B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B1",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "/B.B2": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B1",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "A": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B1",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "/B.B2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler temporal cyclic 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B1",
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": "after",
+        },
+      ],
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "B1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "B1",
+          "temporalIdx": "after",
+        },
+      ],
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler temporal empty statements after intention 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B1",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B1",
+        },
+      ],
+    },
+  },
+  "C1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "C1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler temporal indexed intention after intention 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "A1",
+      },
+    ],
+    "temporal": Object {
+      "1": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler temporal intention after intention 1`] = `
+Object {
+  "0": Array [
+    Object {
+      "op": "apply-value",
+      "selector": "A1",
+    },
+  ],
+}
+`;
+
+exports[`compiler temporal messages intention + indexed intention after message 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 2,
+        },
+      ],
+    },
+  },
+  "B1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "C1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "A1",
+      },
+    ],
+    "temporal": Object {
+      "1": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+      "2": Array [
+        Object {
+          "op": "push-value",
+          "selector": "A1",
+        },
+        Object {
+          "argCount": 1,
+          "op": "call",
+          "selector": "B1",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "skip-if-false",
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler temporal messages statement after message 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "B1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "B1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 1,
+        },
+      ],
+    },
+  },
+  "C1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "C1",
+        },
+      ],
+      "1": Array [
+        Object {
+          "op": "push-value",
+          "selector": "B1",
+        },
+        Object {
+          "argCount": 1,
+          "op": "call",
+          "selector": "A1",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "skip-if-false",
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler temporal statement after intention 1`] = `
+Object {
+  "immediate": Array [
+    Object {
+      "op": "apply-value",
+      "selector": "A1",
+    },
+  ],
+  "temporal": Object {
+    "0": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "A1",
+      },
+    ],
+  },
+}
+`;
+
+exports[`compiler temporal statements after intention 1`] = `
+Object {
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "A1",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "B1",
+          "temporalIdx": 0,
+        },
+        Object {
+          "op": "call-temporal",
+          "selector": "C1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+  "B1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "B1",
+        },
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+  "C1": Object {
+    "immediate": Array [],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-value",
+          "selector": "C1",
+        },
+        Object {
+          "op": "apply-value",
+          "selector": "A1",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`compiler unresolved string id 1`] = `
+Array [
+  Object {
+    "op": "apply-literal",
+    "selector": "a b c",
+  },
+]
+`;
+
+exports[`compiler unresolved string message 1`] = `
+Array [
+  Object {
+    "op": "push-literal",
+    "selector": "abc",
+  },
+  Object {
+    "argCount": 1,
+    "op": "call",
+    "selector": "A1",
+    "temporalIdx": 0,
+  },
+  Object {
+    "op": "pop-value",
+  },
+]
+`;
+
+exports[`compiler unresolved unresolved id 1`] = `
+Array [
+  Object {
+    "op": "apply-literal",
+    "selector": "abc",
+  },
+]
+`;
+
+exports[`fibonacci compiles 1`] = `
+Object {
+  "main": Object {
+    "after": Array [],
+    "before": Array [],
+    "entryPoint": true,
+    "is": Array [
+      Object {
+        "parts": Array [
+          Object {
+            "arg": 1,
+            "id": 10,
+            "type": "literal",
+          },
+          Object {
+            "argCount": 1,
+            "id": "main",
+            "selector": "main.fibonacci",
+            "temporalIdx": 0,
+            "type": "apply-message",
+          },
+        ],
+      },
+    ],
+    "message": Object {},
+  },
+  "main.fibonacci": Object {
+    "after": Array [
+      Object {
+        "id": "main.fibonacci",
+        "temporalIdx": 2,
+        "type": "temporal",
+      },
+    ],
+    "before": Array [],
+    "is": Array [
+      Object {
+        "parts": Array [
+          Object {
+            "arg": 1,
+            "id": "main.fibonacci",
+            "selector": "main.fibonacci",
+            "type": "apply-arg",
+          },
+        ],
+        "temporal": true,
+      },
+      Object {
+        "parts": Array [
+          Object {
+            "arg": 1,
+            "id": "main.fibonacci",
+            "type": "push-arg",
+          },
+          Object {
+            "arg": 1,
+            "id": 2,
+            "type": "literal",
+          },
+          Object {
+            "arg": 1,
+            "id": "-",
+            "type": "literal",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "main.fibonacci",
+            "type": "call-message",
+          },
+          Object {
+            "arg": 1,
+            "id": "main.fibonacci",
+            "type": "push-arg",
+          },
+          Object {
+            "arg": 1,
+            "id": 1,
+            "type": "literal",
+          },
+          Object {
+            "arg": 1,
+            "id": "-",
+            "type": "literal",
+          },
+          Object {
+            "argCount": 3,
+            "id": "postfix",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 1,
+            "id": "main.fibonacci",
+            "type": "call-message",
+          },
+          Object {
+            "arg": 1,
+            "id": "+",
+            "type": "literal",
+          },
+          Object {
+            "argCount": 3,
+            "id": "main.fibonacci",
+            "selector": "postfix",
+            "type": "apply-message",
+          },
+        ],
+        "temporal": true,
+      },
+    ],
+    "message": Object {
+      "2": Array [
+        Object {
+          "arg": 1,
+          "id": "main.fibonacci",
+          "type": "push-arg",
+        },
+        Object {
+          "arg": 1,
+          "id": 1,
+          "type": "literal",
+        },
+        Object {
+          "arg": 1,
+          "id": ">",
+          "type": "literal",
+        },
+        Object {
+          "argCount": 3,
+          "id": "postfix",
+          "type": "call-message",
+        },
+        Object {
+          "id": "main.fibonacci",
+          "temporalIdx": 1,
+          "type": "temporal-after",
+        },
+      ],
+    },
+  },
+  "postfix": undefined,
+}
+`;

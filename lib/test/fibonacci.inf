@@ -1,0 +1,191 @@
+{
+  "level1": true,
+  "detail": "debug",
+  "selectors": {
+    "_all": {},
+    "_latest": {
+      "$1": {
+        "id": "$1",
+        "ident": "$1",
+        "parentId": "",
+        "type": "inst",
+        "aliasMap": {}
+      },
+      "$1.fibonacci": {
+        "id": "$1.fibonacci",
+        "ident": "fibonacci",
+        "parentId": "$1",
+        "type": "inst",
+        "aliasMap": {}
+      }
+    }
+  },
+  "statements": {
+    "_all": {},
+    "_latest": {}
+  },
+  "bindings": {},
+  "exports": [
+    "$1"
+  ],
+  "instructions": {
+    "$1": {
+      "immediate": [
+        {
+          "tag": 10,
+          "op": "push-literal"
+        },
+        {
+          "tag": "$1.fibonacci",
+          "temporalIdx": 0,
+          "op": "call",
+          "argCount": 1
+        },
+        {
+          "op": "pop-value"
+        }
+      ],
+      "temporal": {}
+    },
+    "$1.fibonacci": {
+      "immediate": [
+        {
+          "op": "call-temporal",
+          "temporalIdx": "after",
+          "tag": "$1.fibonacci"
+        }
+      ],
+      "temporal": {
+        "0": [
+          {
+            "op": "apply-arg",
+            "arg": 0
+          },
+          {
+            "op": "call-temporal",
+            "temporalIdx": "after",
+            "tag": "$1.fibonacci"
+          }
+        ],
+        "1": [
+          {
+            "op": "push-arg",
+            "arg": 0
+          },
+          {
+            "tag": 2,
+            "op": "push-literal"
+          },
+          {
+            "tag": "-",
+            "op": "push-literal"
+          },
+          {
+            "tag": "postfix",
+            "temporalIdx": 0,
+            "op": "call-bind",
+            "argCount": 3
+          },
+          {
+            "tag": "$1.fibonacci",
+            "temporalIdx": 0,
+            "op": "call",
+            "argCount": 1
+          },
+          {
+            "op": "push-arg",
+            "arg": 0
+          },
+          {
+            "tag": 1,
+            "op": "push-literal"
+          },
+          {
+            "tag": "-",
+            "op": "push-literal"
+          },
+          {
+            "tag": "postfix",
+            "temporalIdx": 0,
+            "op": "call-bind",
+            "argCount": 3
+          },
+          {
+            "tag": "$1.fibonacci",
+            "temporalIdx": 0,
+            "op": "call",
+            "argCount": 1
+          },
+          {
+            "tag": "+",
+            "op": "push-literal"
+          },
+          {
+            "tag": "postfix",
+            "temporalIdx": 0,
+            "op": "call-bind",
+            "argCount": 3
+          },
+          {
+            "op": "pop-value"
+          },
+          {
+            "op": "call-temporal",
+            "temporalIdx": "after",
+            "tag": "$1.fibonacci"
+          }
+        ],
+        "2": [
+          {
+            "op": "push-arg",
+            "arg": 0
+          },
+          {
+            "tag": 1,
+            "op": "push-literal"
+          },
+          {
+            "tag": ">",
+            "op": "push-literal"
+          },
+          {
+            "tag": "postfix",
+            "temporalIdx": 0,
+            "op": "call-bind",
+            "argCount": 3
+          },
+          {
+            "op": "skip-if-false"
+          },
+          {
+            "tag": "$1.fibonacci",
+            "op": "call-temporal",
+            "temporalIdx": 1
+          },
+          {
+            "op": "call-temporal",
+            "temporalIdx": "after",
+            "tag": "$1.fibonacci"
+          }
+        ],
+        "after": [
+          {
+            "tag": "$1.fibonacci",
+            "op": "call-temporal",
+            "temporalIdx": 2
+          }
+        ]
+      }
+    }
+  },
+  "heap": {},
+  "api": {
+    "$1.fibonacci": {
+      "$1.fibonacci": {
+        "tidx": 0,
+        "arg": 1,
+        "alias": true
+      }
+    }
+  }
+}

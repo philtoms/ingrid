@@ -1,0 +1,57 @@
+{
+  "level1": true,
+  "detail": "debug",
+  "selectors": {
+    "_all": {},
+    "_latest": {
+      "$1": {
+        "id": "$1",
+        "ident": "$1",
+        "parentId": "",
+        "type": "inst",
+        "aliasMap": {}
+      },
+      "$2": {
+        "id": "$2",
+        "ident": "$2",
+        "parentId": "",
+        "type": "inst",
+        "aliasMap": {}
+      }
+    }
+  },
+  "statements": {
+    "_all": {},
+    "_latest": {}
+  },
+  "bindings": {},
+  "exports": [
+    "$1"
+  ],
+  "instructions": {
+    "$1": {
+      "immediate": [
+        {
+          "tag": "hello world",
+          "op": "push-literal"
+        },
+        {
+          "tag": "log",
+          "temporalIdx": 0,
+          "op": "call-bind",
+          "argCount": 1
+        },
+        {
+          "op": "pop-value"
+        }
+      ],
+      "temporal": {}
+    },
+    "$2": {
+      "immediate": [],
+      "temporal": {}
+    }
+  },
+  "heap": {},
+  "api": {}
+}

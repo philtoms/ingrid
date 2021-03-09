@@ -1,0 +1,2124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parser message handling single selector 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.X": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "A1.X",
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+    "A1.X": Object {
+      "aliasMap": Object {},
+      "id": "A1.X",
+      "ident": "X",
+      "parentId": "A1",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+        },
+      ],
+      "type": "tag",
+    },
+    "B1": Object {
+      "aliasMap": Object {},
+      "id": "B1",
+      "ident": "B1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "A1",
+                  "message": Array [
+                    Object {
+                      "ident": "X",
+                      "message": null,
+                      "type": "tag",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser message handling single selector unresolved 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.X": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "A1.X",
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+    "A1.X": Object {
+      "aliasMap": Object {},
+      "id": "A1.X",
+      "ident": "X",
+      "parentId": "A1",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+        },
+      ],
+      "type": "tag",
+    },
+    "B1": Object {
+      "aliasMap": Object {},
+      "id": "B1",
+      "ident": "B1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "A1",
+                  "message": Array [
+                    Object {
+                      "ident": "Y",
+                      "message": null,
+                      "type": "tag",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement aggregation aggregate message 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.1": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+      "A1.2": Object {
+        "arg": 2,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement aggregation aggregate selectors 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement aggregation fold aggregte message selectors 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.x": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+      "A1.y": Object {
+        "arg": 2,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "x",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement aggregation fold intentions 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "2",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement aggregation fold message selectors 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.x": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "x",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement aggregation fold selectors 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement aggregation multi-line intentions 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "A2",
+                "message": Array [
+                  Object {
+                    "ident": "4",
+                    "message": null,
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "block",
+            "selector": Array [
+              "A1.A2",
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+  "A1.A2": Object {
+    "aliasMap": Object {
+      "A1.A2": "value",
+      "value": "A1.A2",
+    },
+    "id": "A1.A2",
+    "ident": "A2",
+    "parentId": "A1",
+    "quantifierMap": Object {
+      "A1.A2": "?",
+    },
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "A2",
+                "message": Array [
+                  Object {
+                    "ident": "value",
+                    "message": null,
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "before",
+            "selector": Array [
+              Object {
+                "ident": "value",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+        "temporal": true,
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement alias message 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.1": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {
+        "A1.1": "x",
+        "x": "A1.1",
+      },
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement alias tag + message 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.1": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {
+        "A1.1": "y",
+        "x": "A1",
+        "y": "A1.1",
+      },
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement alias tag 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {
+      "x": "A1",
+    },
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement blocks message block 1`] = `
+Object {
+  "api": Object {
+    "A1.A2": Object {
+      "A1.A2.1": Object {
+        "arg": 1,
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "A1.A2",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "A1.A2": Object {
+      "aliasMap": Object {},
+      "id": "A1.A2",
+      "ident": "A2",
+      "parentId": "A1",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement blocks tag block 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "block",
+            "selector": Array [
+              "A1.A2",
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+  "A1.A2": Object {
+    "aliasMap": Object {},
+    "id": "A1.A2",
+    "ident": "A2",
+    "parentId": "A1",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement immediate intentions aggregate 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "2",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement immediate intentions aggregate message 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "A2",
+                "message": Array [
+                  Object {
+                    "ident": "1",
+                    "message": null,
+                    "type": "tag",
+                  },
+                  Object {
+                    "ident": "2",
+                    "message": null,
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement immediate intentions message 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "A2",
+                "message": Array [
+                  Object {
+                    "ident": "2",
+                    "message": null,
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement immediate intentions nested message 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "A2",
+                "message": Array [
+                  Object {
+                    "ident": "A3",
+                    "message": Array [
+                      Object {
+                        "ident": "2",
+                        "message": null,
+                        "type": "tag",
+                      },
+                    ],
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement message selectors aggregate message tag  1`] = `
+Object {
+  "A1": Object {
+    "A1.1": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+    "A1.2": Object {
+      "arg": 2,
+      "tidx": 0,
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement message selectors nested message tag 1`] = `
+Object {
+  "A1": Object {
+    "A1.A2": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+    "A1.A2.A3": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+    "A1.A2.A4": Object {
+      "arg": 2,
+      "tidx": 0,
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement message selectors tag message 1`] = `
+Object {
+  "A1": Object {
+    "A1.1": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement quantifier quantifier intention 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "B1",
+                  "message": null,
+                  "quantifier": "+",
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement quantifier quantifier message intention 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+                "message": Array [
+                  Object {
+                    "ident": "C1",
+                    "message": null,
+                    "quantifier": "+",
+                    "type": "tag",
+                  },
+                ],
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement quantifier quantifier message tag 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1": Object {
+        "arg": 1,
+        "quantifier": "+",
+        "tidx": 0,
+        "type": Symbol(empty),
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifierMap": Object {
+        "A1": "+",
+      },
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement quantifier quantifier tag + quantifier message 1`] = `
+Object {
+  "api": Object {
+    "A1": Object {
+      "A1.1": Object {
+        "arg": 1,
+        "quantifier": "?",
+        "tidx": 0,
+        "type": "tag",
+      },
+    },
+  },
+  "selectors": Object {
+    "A1": Object {
+      "aliasMap": Object {},
+      "id": "A1",
+      "ident": "A1",
+      "parentId": "",
+      "quantifier": "+",
+      "quantifierMap": Object {
+        "A1": "+",
+        "A1.1": "?",
+      },
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement quantifier quantifier tag 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifier": "+",
+    "quantifierMap": Object {
+      "A1": "+",
+    },
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement rules rule - alias 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "X": Object {
+      "aliasMap": Object {},
+      "id": "X",
+      "ident": "X",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "X",
+            "tokens": Array [
+              "tag",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "1",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - binding 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "X": Object {
+      "aliasMap": Object {},
+      "id": "X",
+      "ident": "X",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": 123,
+                  "message": null,
+                  "type": "literal",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "int": Object {
+      "aliasMap": Object {},
+      "id": "int",
+      "ident": "int",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "int",
+            "tokens": Array [
+              "[0-9]+",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "token",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - block 1`] = `
+Object {
+  "A": Object {
+    "aliasMap": Object {},
+    "id": "A",
+    "intentions": Array [
+      Object {
+        "selector": Array [
+          "A.B",
+          "A.C",
+        ],
+        "intent": "block",
+      },
+    ],
+    "parentId": "",
+    "quantifier": null,
+    "quantifierMap": Object {},
+    "tag": "A",
+    "token": "A",
+    "type": "index",
+  },
+  "A.B": Object {
+    "aliasMap": Object {},
+    "id": "A.B",
+    "intentions": Array [],
+    "parentId": "A",
+    "quantifier": null,
+    "quantifierMap": Object {},
+    "tag": "A.B",
+    "token": "B",
+    "type": "index",
+  },
+  "A.C": Object {
+    "aliasMap": Object {},
+    "id": "A.C",
+    "intentions": Array [
+      Object {
+        "selector": Array [
+          "A.C.D",
+        ],
+        "intent": "block",
+      },
+    ],
+    "parentId": "A",
+    "quantifier": null,
+    "quantifierMap": Object {},
+    "tag": "A.C",
+    "token": "C",
+    "type": "index",
+  },
+  "A.C.D": Object {
+    "aliasMap": Object {},
+    "id": "A.C.D",
+    "intentions": Array [],
+    "parentId": "A.C",
+    "quantifier": null,
+    "quantifierMap": Object {},
+    "tag": "A.C.D",
+    "token": "D",
+    "type": "index",
+  },
+  "has": Object {
+    "aliasMap": Object {},
+    "grammar": Object {
+      "rule": "has",
+      "tokens": Array [
+        "'has'",
+        "statement",
+        "+",
+      ],
+    },
+    "id": "has",
+    "intentions": Array [
+      Object {
+        "selector": Array [
+          Object {
+            "message": null,
+            "quantifier": null,
+            "token": "block",
+            "type": "index",
+          },
+        ],
+        "intent": "is",
+      },
+    ],
+    "parentId": "",
+    "quantifier": undefined,
+    "quantifierMap": Object {},
+    "tag": "has",
+    "token": "has",
+    "type": "grammar",
+  },
+}
+`;
+
+exports[`parser statement rules rule - construction 1`] = `
+Object {
+  "api": Object {
+    "predicate.parts": Object {
+      "predicate.parts": Object {
+        "arg": 1,
+        "quantifier": "+",
+        "tidx": 0,
+        "type": Symbol(empty),
+      },
+    },
+  },
+  "selectors": Object {
+    "op": Object {
+      "aliasMap": Object {},
+      "id": "op",
+      "ident": "op",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "op",
+            "tokens": Array [
+              "'+'",
+            ],
+          },
+          "intentions": Array [],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate": Object {
+      "aliasMap": Object {},
+      "id": "predicate",
+      "ident": "predicate",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "predicate",
+            "tokens": Array [
+              "tag",
+              "op",
+              "tag",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "selector",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "predicate.parts",
+                "predicate.intention",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.intention": Object {
+      "aliasMap": Object {},
+      "id": "predicate.intention",
+      "ident": "intention",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "parts",
+                      "message": null,
+                      "type": "tag",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.parts": Object {
+      "aliasMap": Object {},
+      "id": "predicate.parts",
+      "ident": "parts",
+      "parentId": "predicate",
+      "quantifierMap": Object {
+        "predicate.parts": "+",
+      },
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "log",
+                  "message": Array [
+                    Object {
+                      "ident": "parts",
+                      "message": null,
+                      "type": "tag",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - construction 2`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "A": Object {
+      "aliasMap": Object {},
+      "id": "A",
+      "ident": "A",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "1",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "2",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "+",
+                      "message": null,
+                      "type": "literal",
+                    },
+                  ],
+                  "type": "bind",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - fail 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {},
+}
+`;
+
+exports[`parser statement rules rule - in message 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "A": Object {
+      "aliasMap": Object {},
+      "id": "A",
+      "ident": "A",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "A",
+                  "message": Array [
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "1",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "2",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "-",
+                          "message": null,
+                          "type": "literal",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                  ],
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate": Object {
+      "aliasMap": Object {},
+      "id": "predicate",
+      "ident": "predicate",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "predicate",
+            "tokens": Array [
+              "tag",
+              "op",
+              "tag",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "selector",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "predicate.op",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.op": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op",
+      "ident": "op",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "op",
+            "tokens": Array [
+              "(",
+              "'+'",
+              "/",
+              "'-'",
+              ")",
+            ],
+          },
+          "intentions": Array [],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - intent 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "_iseq": Object {
+      "aliasMap": Object {},
+      "id": "_iseq",
+      "ident": "_iseq",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "_iseq",
+            "tokens": Array [
+              "'=='",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "intent",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "==",
+              "selector": Array [
+                Object {
+                  "ident": "1",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - nested rule 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "A": Object {
+      "aliasMap": Object {},
+      "id": "A",
+      "ident": "A",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "1",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "2",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "+",
+                      "message": null,
+                      "type": "literal",
+                    },
+                  ],
+                  "type": "bind",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate": Object {
+      "aliasMap": Object {},
+      "id": "predicate",
+      "ident": "predicate",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "predicate",
+            "tokens": Array [
+              "tag",
+              "op",
+              "tag",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "selector",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "block",
+              "selector": Array [
+                "predicate.op",
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+    "predicate.op": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op",
+      "ident": "op",
+      "parentId": "predicate",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "op",
+            "tokens": Array [
+              "'+'",
+            ],
+          },
+          "intentions": Array [],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - recursive 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "A": Object {
+      "aliasMap": Object {},
+      "id": "A",
+      "ident": "A",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "postfix",
+                  "message": Array [
+                    Object {
+                      "ident": "1",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "postfix",
+                      "message": Array [
+                        Object {
+                          "ident": "2",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "3",
+                          "message": null,
+                          "type": "tag",
+                        },
+                        Object {
+                          "ident": "+",
+                          "message": null,
+                          "type": "literal",
+                        },
+                      ],
+                      "type": "bind",
+                    },
+                    Object {
+                      "ident": "+",
+                      "message": null,
+                      "type": "literal",
+                    },
+                  ],
+                  "type": "bind",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - regex 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "cell": Object {
+      "aliasMap": Object {},
+      "id": "cell",
+      "ident": "cell",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "cell",
+            "tokens": Array [
+              "'X'",
+              "[0-9]",
+            ],
+          },
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "token",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "X1",
+                  "message": null,
+                  "type": "cell",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement rules rule - regexstr 1`] = `
+Object {
+  "api": Object {},
+  "selectors": Object {
+    "_is0": Object {
+      "aliasMap": Object {},
+      "id": "_is0",
+      "ident": "_is0",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "grammar": Object {
+            "rule": "_is0",
+            "tokens": Array [
+              "[0]?",
+            ],
+          },
+          "intentions": Array [],
+        },
+      ],
+      "type": "grammar",
+    },
+  },
+}
+`;
+
+exports[`parser statement temporal intentions statement aggregate and temporal 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+              },
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+              Object {
+                "ident": "3",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "2",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement temporal intentions statement aggregate intentions 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+              },
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+              Object {
+                "ident": "2",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement temporal intentions statement and temporal 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+              },
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "2",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement temporal intentions statement no intentions 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;
+
+exports[`parser statement temporal intentions statement one intention 1`] = `
+Object {
+  "A1": Object {
+    "aliasMap": Object {},
+    "id": "A1",
+    "ident": "A1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [],
+      },
+    ],
+    "type": "tag",
+  },
+  "B1": Object {
+    "aliasMap": Object {},
+    "id": "B1",
+    "ident": "B1",
+    "parentId": "",
+    "quantifierMap": Object {},
+    "selected": Array [
+      Object {
+        "intentions": Array [
+          Object {
+            "intent": "is",
+            "selector": Array [
+              Object {
+                "ident": "B1",
+              },
+              Object {
+                "ident": "1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+          Object {
+            "intent": "after",
+            "selector": Array [
+              Object {
+                "ident": "A1",
+                "message": null,
+                "type": "tag",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "type": "tag",
+  },
+}
+`;

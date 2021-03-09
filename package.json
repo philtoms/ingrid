@@ -1,0 +1,23 @@
+{
+  "name": "ingrid",
+  "version": "0.0.1-alpha",
+  "description": "compiler",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/philtoms/ingrid.git"
+  },
+  "author": "Phil Toms",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/philtoms/ingrid#readme",
+  "dependencies": {
+    "pegjs": "^0.10.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}

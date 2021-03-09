@@ -1,0 +1,17 @@
+predicate:`arg (op predicate)?` is tag {
+  arg:`tag`
+  op:`'*' / '/' / '+' / '-'`? {
+    ('*') {prec is 2}
+    ('+') {prec is 1}
+  }
+
+  opstack* is op
+    is predicate.op after postfix(push, true, '=')
+
+  parts+ is arg
+    is opstack.pop() after postfix(push, false, '=', opstack.pop, '&&')
+
+  push is postfix(predicate.op.prec, opstack.top.prec, '>')
+
+  tag is postfix(parts, predicate.parts)
+}

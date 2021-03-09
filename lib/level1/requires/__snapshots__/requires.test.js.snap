@@ -1,0 +1,467 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`requires augment inherited block intention 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b2",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "$1.b2": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 2,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": 4,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires regex augment inherited block intention 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "$1./b": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 4,
+      },
+    ],
+    "temporal": Object {},
+  },
+  "$1.b2": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 2,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": 4,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should append file tag as temporal 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.c",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": 123,
+        },
+      ],
+    },
+  },
+  "$1.b": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 2,
+      },
+      Object {
+        "op": "call-temporal",
+        "selector": "$1.b",
+        "temporalIdx": "after",
+      },
+    ],
+    "temporal": Object {
+      "after": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "$1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`requires should apply file Api to local scope(one dot rule) 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "argCount": 0,
+        "op": "call",
+        "selector": "$1.b",
+        "temporalIdx": 0,
+      },
+      Object {
+        "op": "pop-value",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should extend file tag 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.c",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": 123,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "$1.b": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 2,
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": 123,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should ignore string identifier 1`] = `
+Object {
+  "api": Object {},
+  "ast": Array [
+    Object {
+      "intentions": Array [
+        Object {
+          "intent": "is",
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "ident": "test",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+      ],
+      "selectors": Array [
+        Object {
+          "message": null,
+          "token": Object {
+            "ident": "A",
+            "quantifier": null,
+            "rule": "token",
+            "type": "tag",
+          },
+        },
+      ],
+    },
+  ],
+  "exports": Array [
+    "A",
+  ],
+  "instructions": Object {
+    "A": Object {
+      "immediate": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": "test",
+        },
+      ],
+      "temporal": Object {},
+    },
+    "test": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+  },
+  "selectors": Object {
+    "A": Object {
+      "aliasMap": Object {},
+      "id": "A",
+      "ident": "A",
+      "parentId": "",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": "test",
+                  "message": null,
+                  "type": "tag",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      "type": "tag",
+    },
+  },
+  "statements": Object {
+    "A": Object {
+      "after": Array [],
+      "before": Array [],
+      "entryPoint": true,
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "id": "A",
+              "selector": "test",
+              "type": "unresolved",
+            },
+          ],
+        },
+      ],
+      "message": Object {},
+    },
+    "test": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "test",
+      "ident": "test",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+  },
+}
+`;
+
+exports[`requires should prepend file tag as temporal 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.c",
+      },
+    ],
+    "temporal": Object {
+      "0": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": 123,
+        },
+      ],
+    },
+  },
+  "$1.c": Object {
+    "immediate": Array [
+      Object {
+        "op": "call-temporal",
+        "selector": "$1.c",
+        "temporalIdx": "before",
+      },
+      Object {
+        "op": "apply-literal",
+        "selector": 3,
+      },
+    ],
+    "temporal": Object {
+      "before": Array [
+        Object {
+          "op": "call-temporal",
+          "selector": "$1",
+          "temporalIdx": 0,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`requires should reference frame scoped file selectors 1`] = `
+Object {
+  "A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "$1",
+      },
+      Object {
+        "op": "apply-value",
+        "selector": "$1.b2",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should reference tag scoped file 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b2",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "B": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "$1",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should require file Api into tag scope (one dot rule) 1`] = `
+Object {
+  "$1.b": Object {
+    "$1.b.x": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+  },
+  "$1.c": Object {
+    "$1.c.y": Object {
+      "arg": 1,
+      "tidx": 0,
+      "type": "tag",
+    },
+  },
+}
+`;
+
+exports[`requires should require file into tag scope 1`] = `
+Object {
+  "$1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 1,
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.b",
+      },
+      Object {
+        "op": "apply-block",
+        "selector": "$1.c",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should require nested file into tag scope 1`] = `
+Object {
+  "$2": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": 123,
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`requires should select frame scoped file intention 1`] = `
+Object {
+  "A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-value",
+        "selector": "$1",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;

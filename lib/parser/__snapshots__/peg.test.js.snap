@@ -1,0 +1,959 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parser alias str 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "alias": "a b",
+          "ident": "x",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser aliased annon message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "token": Object {
+                "alias": "id",
+                "quantifier": "*",
+                "type": Symbol(empty),
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser aliased empty message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "token": Object {
+                "alias": "id",
+                "type": Symbol(empty),
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser aliased message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "alias": "X",
+                "ident": "1",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser block 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "B",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser block aggregate 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "B",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "C",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser block aggregate interleaved 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "B",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      Object {
+        "intent": "is",
+        "selector": Array [
+          Object {
+            "message": null,
+            "token": Object {
+              "ident": "B",
+              "quantifier": null,
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        ],
+      },
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "C",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      Object {
+        "intent": "is",
+        "selector": Array [
+          Object {
+            "message": null,
+            "token": Object {
+              "ident": "C",
+              "quantifier": null,
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser empty message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "token": Object {
+                "type": Symbol(empty),
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser full tag 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "ident": "b",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "alias": "x",
+          "ident": "a",
+          "quantifier": "?",
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "c",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser limit quantifier 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": Object {
+            "max": "1",
+            "min": "1",
+          },
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "ident": "x",
+                "quantifier": null,
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser message intention 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "is",
+        "selector": Array [
+          Object {
+            "message": Object {
+              "selector": Array [
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "1",
+                    "quantifier": null,
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+                Object {
+                  "message": null,
+                  "token": Object {
+                    "ident": "2",
+                    "quantifier": null,
+                    "rule": "token",
+                    "type": "tag",
+                  },
+                },
+              ],
+            },
+            "token": Object {
+              "ident": "postfix",
+              "quantifier": null,
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser multi-line 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "is",
+        "selector": Array [
+          Object {
+            "message": null,
+            "token": Object {
+              "ident": "A2",
+              "quantifier": null,
+              "rule": "token",
+              "type": "tag",
+            },
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A1",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser nested 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [
+              Object {
+                "intent": "is",
+                "selector": Array [
+                  Object {
+                    "message": null,
+                    "token": Object {
+                      "ident": "123",
+                      "quantifier": null,
+                      "rule": "token",
+                      "type": "tag",
+                    },
+                  },
+                ],
+              },
+              Object {
+                "intent": "block",
+                "selector": Array [
+                  Object {
+                    "intentions": Array [
+                      Object {
+                        "intent": "is",
+                        "selector": Array [
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "D1",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                        ],
+                      },
+                      Object {
+                        "intent": "block",
+                        "selector": Array [
+                          Object {
+                            "intentions": Array [
+                              Object {
+                                "intent": "is",
+                                "selector": Array [
+                                  Object {
+                                    "message": null,
+                                    "token": Object {
+                                      "ident": "456",
+                                      "quantifier": null,
+                                      "rule": "token",
+                                      "type": "tag",
+                                    },
+                                  },
+                                ],
+                              },
+                            ],
+                            "selectors": Array [
+                              Object {
+                                "message": null,
+                                "token": Object {
+                                  "ident": "D1",
+                                  "quantifier": null,
+                                  "rule": "token",
+                                  "type": "tag",
+                                },
+                              },
+                            ],
+                          },
+                        ],
+                      },
+                    ],
+                    "selectors": Array [
+                      Object {
+                        "message": null,
+                        "token": Object {
+                          "ident": "C1",
+                          "quantifier": null,
+                          "rule": "token",
+                          "type": "tag",
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "B1",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A1",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser quantified annon message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "token": Object {
+                "quantifier": "*",
+                "type": Symbol(empty),
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser quantified message 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": Object {
+          "selector": Array [
+            Object {
+              "message": null,
+              "token": Object {
+                "ident": "x",
+                "quantifier": "+",
+                "rule": "token",
+                "type": "tag",
+              },
+            },
+          ],
+        },
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser quantifier 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": "?",
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser range quantifier 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": Object {
+            "max": "2",
+            "min": "0",
+          },
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser regex tag 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "/123",
+          "quantifier": null,
+          "rule": "token",
+          "type": "regex",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser regex tag ref 1`] = `
+Array [
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "is",
+        "selector": Array [
+          Object {
+            "message": null,
+            "token": Object {
+              "ident": "/123",
+              "quantifier": null,
+              "rule": "token",
+              "type": "regex",
+            },
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser statement blocks 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "A",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "C",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "B",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+  Object {
+    "intentions": Array [
+      Object {
+        "intent": "block",
+        "selector": Array [
+          Object {
+            "intentions": Array [],
+            "selectors": Array [
+              Object {
+                "message": null,
+                "token": Object {
+                  "ident": "E",
+                  "quantifier": null,
+                  "rule": "token",
+                  "type": "tag",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "D",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser str - escaped 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "\\\\'b",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser tag 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser tag aggregation 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "b",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "c",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser tag quantifier 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": "*",
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
