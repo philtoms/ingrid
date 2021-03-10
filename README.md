@@ -116,7 +116,7 @@ Each of these kinds of intentionalities, marked by SMs establishes a semantic re
 
 The examples of applied intentionality presented in this README highlight Ingrid's continued development towards a goal of AI augmented development. The ideal of third-party intentionality is for at least one of those parties to be AI generated, and to be trained to recognize and respond to semantic markers through the delivery of appropriately integrated code.
 
-Just to round things off, Ingrid doesn't absolutely depend on semantically tipped off third-parties to fill in the boilerplate. It provides a granular abstraction mechanism that can be used to generate intentionally viable syntax. This is where all of the dirty code goes when you don't want it to muddy the surface intentionality. Strictly speaking, granular abstraction is just another kind of semantic marker where the [third-party context is provided by the language itself]().
+Just to round things off, Ingrid doesn't absolutely depend on semantically tipped off, artificially generated third-parties to fill in the boilerplate. It provides a granular abstraction mechanism that can be used to generate intentionally viable syntax. This is where all of the dirty code goes when you don't want it to muddy the surface intentionality. Strictly speaking, granular abstraction is just another kind of semantic marker where the [third-party context is provided by the language itself](), but you might simply prefer to think of it this way: Ingrid supports modules.
 
 The following design level code could be included in any distribution where the browser is not expected to recognize the intentionality of the previous little todo app. I know, _how likely is that?_
 
