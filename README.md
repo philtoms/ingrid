@@ -33,7 +33,7 @@ spreadsheet {
 
 ## Agreement
 
-The converse of rational behavior is of course irrational behavior. But that phrase has many connotations that are not appropriate to software development. In the terminology of applied intentionality, there is only rationalization. A failure to rationalize an intentionality is simply a failure to reach agreement. Agreement with the owner of the software, or the developer, or even agreement throughout the team, is established in Ingrid through correlated agreement at the code level.
+The converse of rational behavior is of course irrational behavior. But that phrase has many connotations that are not appropriate to software development. In the constrained terminology of applied intentionality, there is only rationalization. A failure to rationalize an intentionality is simply a failure to reach agreement. Agreement with the owner of the software, or the developer, or even agreement throughout the team, is established in Ingrid through correlated agreement at the code level.
 
 You'll need to do a bit of rationalizing of your own before we can reach agreement over what this code is doing.
 
