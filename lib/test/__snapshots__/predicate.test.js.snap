@@ -2,7 +2,35 @@
 
 exports[`predicate snapshot 1`] = `
 Object {
-  "api": Object {},
+  "api": Object {
+    "predicate.op.postfix": Object {
+      "predicate.op.postfix.postfix": Object {
+        "arg": 1,
+        "tidx": 1,
+        "type": "bind",
+      },
+      "predicate.op.postfix.postfix.*": Object {
+        "arg": 2,
+        "tidx": 0,
+        "type": "tag",
+      },
+      "predicate.op.postfix.postfix.+": Object {
+        "arg": 2,
+        "tidx": 1,
+        "type": "tag",
+      },
+      "predicate.op.postfix.postfix.=": Object {
+        "arg": 1,
+        "tidx": 1,
+        "type": "tag",
+      },
+      "predicate.op.postfix.postfix.[object Object]": Object {
+        "arg": 3,
+        "tidx": 1,
+        "type": "tag",
+      },
+    },
+  },
   "ast": Array [
     Object {
       "intentions": Array [
@@ -62,72 +90,35 @@ Object {
                             },
                           ],
                         },
+                      ],
+                      "selectors": Array [
                         Object {
-                          "intent": "if",
-                          "selector": Array [
-                            Object {
-                              "message": Object {
-                                "selector": Array [
-                                  Object {
-                                    "alias": null,
-                                    "message": Object {
-                                      "selector": Array [
-                                        Object {
-                                          "message": null,
-                                          "token": Object {
-                                            "ident": "=",
-                                            "quantifier": null,
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                        Object {
-                                          "message": null,
-                                          "token": Object {
-                                            "ident": "*",
-                                            "quantifier": null,
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                        Object {
-                                          "alias": null,
-                                          "message": null,
-                                          "quantifier": null,
-                                          "token": Object {
-                                            "ident": Object {
-                                              "message": null,
-                                              "token": Object {
-                                                "ident": "op",
-                                                "quantifier": null,
-                                                "rule": "token",
-                                                "type": "tag",
-                                              },
-                                            },
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                      ],
-                                    },
-                                    "quantifier": null,
-                                    "token": Object {
-                                      "ident": "postfix",
-                                      "rule": "token",
-                                      "type": "bind",
-                                    },
-                                  },
-                                ],
-                              },
-                              "token": Object {
-                                "ident": "postfix",
-                                "quantifier": null,
-                                "rule": "token",
-                                "type": "tag",
-                              },
-                            },
-                          ],
+                          "message": null,
+                          "token": Object {
+                            "ident": "prec",
+                            "quantifier": null,
+                            "rule": "token",
+                            "type": "tag",
+                          },
                         },
+                      ],
+                    },
+                    Object {
+                      "intentions": Array [],
+                      "selectors": Array [
+                        Object {
+                          "message": null,
+                          "token": Object {
+                            "ident": "if",
+                            "quantifier": null,
+                            "rule": "token",
+                            "type": "tag",
+                          },
+                        },
+                      ],
+                    },
+                    Object {
+                      "intentions": Array [
                         Object {
                           "intent": "is",
                           "selector": Array [
@@ -142,78 +133,144 @@ Object {
                             },
                           ],
                         },
+                      ],
+                      "selectors": Array [
                         Object {
-                          "intent": "if",
-                          "selector": Array [
-                            Object {
-                              "message": Object {
-                                "selector": Array [
-                                  Object {
-                                    "alias": null,
-                                    "message": Object {
-                                      "selector": Array [
-                                        Object {
+                          "message": Object {
+                            "selector": Array [
+                              Object {
+                                "alias": null,
+                                "message": Object {
+                                  "selector": Array [
+                                    Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "=",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "*",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    Object {
+                                      "alias": null,
+                                      "message": null,
+                                      "quantifier": null,
+                                      "token": Object {
+                                        "ident": Object {
                                           "message": null,
                                           "token": Object {
-                                            "ident": "=",
+                                            "ident": "op",
                                             "quantifier": null,
                                             "rule": "token",
                                             "type": "tag",
                                           },
                                         },
-                                        Object {
-                                          "message": null,
-                                          "token": Object {
-                                            "ident": "+",
-                                            "quantifier": null,
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                        Object {
-                                          "alias": null,
-                                          "message": null,
-                                          "quantifier": null,
-                                          "token": Object {
-                                            "ident": Object {
-                                              "message": null,
-                                              "token": Object {
-                                                "ident": "op",
-                                                "quantifier": null,
-                                                "rule": "token",
-                                                "type": "tag",
-                                              },
-                                            },
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                      ],
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
                                     },
-                                    "quantifier": null,
-                                    "token": Object {
-                                      "ident": "postfix",
-                                      "rule": "token",
-                                      "type": "bind",
-                                    },
-                                  },
-                                ],
-                              },
-                              "token": Object {
-                                "ident": "postfix",
+                                  ],
+                                },
                                 "quantifier": null,
-                                "rule": "token",
-                                "type": "tag",
+                                "token": Object {
+                                  "ident": "postfix",
+                                  "rule": "token",
+                                  "type": "bind",
+                                },
                               },
-                            },
-                          ],
+                            ],
+                          },
+                          "token": Object {
+                            "ident": "postfix",
+                            "quantifier": null,
+                            "rule": "token",
+                            "type": "tag",
+                          },
                         },
                       ],
+                    },
+                    Object {
+                      "intentions": Array [],
                       "selectors": Array [
                         Object {
                           "message": null,
                           "token": Object {
-                            "ident": "prec",
+                            "ident": "if",
+                            "quantifier": null,
+                            "rule": "token",
+                            "type": "tag",
+                          },
+                        },
+                      ],
+                    },
+                    Object {
+                      "intentions": Array [],
+                      "selectors": Array [
+                        Object {
+                          "message": Object {
+                            "selector": Array [
+                              Object {
+                                "alias": null,
+                                "message": Object {
+                                  "selector": Array [
+                                    Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "=",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    Object {
+                                      "message": null,
+                                      "token": Object {
+                                        "ident": "+",
+                                        "quantifier": null,
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                    Object {
+                                      "alias": null,
+                                      "message": null,
+                                      "quantifier": null,
+                                      "token": Object {
+                                        "ident": Object {
+                                          "message": null,
+                                          "token": Object {
+                                            "ident": "op",
+                                            "quantifier": null,
+                                            "rule": "token",
+                                            "type": "tag",
+                                          },
+                                        },
+                                        "rule": "token",
+                                        "type": "tag",
+                                      },
+                                    },
+                                  ],
+                                },
+                                "quantifier": null,
+                                "token": Object {
+                                  "ident": "postfix",
+                                  "rule": "token",
+                                  "type": "bind",
+                                },
+                              },
+                            ],
+                          },
+                          "token": Object {
+                            "ident": "postfix",
                             "quantifier": null,
                             "rule": "token",
                             "type": "tag",
@@ -653,14 +710,6 @@ Object {
   ],
   "exports": Array [],
   "instructions": Object {
-    "*": Object {
-      "immediate": Array [],
-      "temporal": Object {},
-    },
-    "+": Object {
-      "immediate": Array [],
-      "temporal": Object {},
-    },
     "=": Object {
       "immediate": Array [],
       "temporal": Object {},
@@ -697,84 +746,29 @@ Object {
       "immediate": Array [],
       "temporal": Object {},
     },
-    "predicate.op.prec": Object {
+    "predicate.op.if": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "predicate.op.postfix": Object {
       "immediate": Array [],
       "temporal": Object {
         "0": Array [
           Object {
             "op": "apply-literal",
-            "selector": 2,
-          },
-        ],
-        "1": Array [
-          Object {
-            "op": "push-literal",
-            "selector": "=",
-          },
-          Object {
-            "op": "push-literal",
-            "selector": "*",
-          },
-          Object {
-            "op": "push-literal",
-            "selector": Object {
-              "message": null,
-              "token": Object {
-                "ident": "op",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-          },
-          Object {
-            "argCount": 3,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
-          },
-          Object {
-            "argCount": 1,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
-          },
-        ],
-        "3": Array [
-          Object {
-            "op": "push-literal",
-            "selector": "=",
-          },
-          Object {
-            "op": "push-literal",
-            "selector": "+",
-          },
-          Object {
-            "op": "push-literal",
-            "selector": Object {
-              "message": null,
-              "token": Object {
-                "ident": "op",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-          },
-          Object {
-            "argCount": 3,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
-          },
-          Object {
-            "argCount": 1,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
+            "selector": 1,
           },
         ],
       },
+    },
+    "predicate.op.prec": Object {
+      "immediate": Array [
+        Object {
+          "op": "apply-literal",
+          "selector": 2,
+        },
+      ],
+      "temporal": Object {},
     },
     "predicate.opstack": Object {
       "immediate": Array [],
@@ -1067,12 +1061,61 @@ Object {
               "intent": "block",
               "selector": Array [
                 "predicate.op.prec",
+                "predicate.op.if",
+                "predicate.op.postfix",
+                "predicate.op.if",
+                "predicate.op.postfix",
               ],
             },
           ],
         },
       ],
       "type": "grammar",
+    },
+    "predicate.op.if": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op.if",
+      "ident": "if",
+      "parentId": "predicate.op",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [],
+        },
+        Object {
+          "intentions": Array [],
+        },
+      ],
+      "type": "tag",
+    },
+    "predicate.op.postfix": Object {
+      "aliasMap": Object {},
+      "id": "predicate.op.postfix",
+      "ident": "postfix",
+      "parentId": "predicate.op",
+      "quantifierMap": Object {},
+      "selected": Array [
+        Object {
+          "intentions": Array [
+            Object {
+              "intent": "is",
+              "selector": Array [
+                Object {
+                  "ident": 1,
+                  "message": null,
+                  "type": "literal",
+                },
+              ],
+            },
+          ],
+          "temporal": true,
+        },
+        Object {
+          "intentions": Array [],
+          "temporal": true,
+        },
+      ],
+      "type": "tag",
     },
     "predicate.op.prec": Object {
       "aliasMap": Object {},
@@ -1090,96 +1133,6 @@ Object {
                   "ident": 2,
                   "message": null,
                   "type": "literal",
-                },
-              ],
-            },
-            Object {
-              "intent": "if",
-              "selector": Array [
-                Object {
-                  "ident": "postfix",
-                  "message": Array [
-                    Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": "=",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": "*",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "op",
-                              "quantifier": null,
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
-                    },
-                  ],
-                  "type": "tag",
-                },
-              ],
-            },
-            Object {
-              "intent": "is",
-              "selector": Array [
-                Object {
-                  "ident": 1,
-                  "message": null,
-                  "type": "literal",
-                },
-              ],
-            },
-            Object {
-              "intent": "if",
-              "selector": Array [
-                Object {
-                  "ident": "postfix",
-                  "message": Array [
-                    Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": "=",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": "+",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "op",
-                              "quantifier": null,
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
-                    },
-                  ],
-                  "type": "tag",
                 },
               ],
             },
@@ -1448,24 +1401,6 @@ Object {
     },
   },
   "statements": Object {
-    "*": Object {
-      "after": Array [],
-      "before": Array [],
-      "id": "*",
-      "ident": "*",
-      "is": Array [],
-      "message": Object {},
-      "type": "unresolved",
-    },
-    "+": Object {
-      "after": Array [],
-      "before": Array [],
-      "id": "+",
-      "ident": "+",
-      "is": Array [],
-      "message": Object {},
-      "type": "unresolved",
-    },
     "=": Object {
       "after": Array [],
       "before": Array [],
@@ -1561,6 +1496,29 @@ Object {
       "message": Object {},
       "type": "unresolved",
     },
+    "predicate.op.if": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [],
+      "message": Object {},
+    },
+    "predicate.op.postfix": Object {
+      "after": Array [],
+      "before": Array [],
+      "is": Array [
+        Object {
+          "parts": Array [
+            Object {
+              "id": "predicate.op.postfix",
+              "selector": 1,
+              "type": "literal",
+            },
+          ],
+          "temporal": true,
+        },
+      ],
+      "message": Object {},
+    },
     "predicate.op.prec": Object {
       "after": Array [],
       "before": Array [],
@@ -1573,101 +1531,9 @@ Object {
               "type": "literal",
             },
           ],
-          "temporal": true,
-        },
-        Object {
-          "parts": Array [
-            Object {
-              "id": "predicate.op.prec",
-              "selector": 1,
-              "type": "literal",
-            },
-          ],
-          "temporal": true,
         },
       ],
-      "message": Object {
-        "1": Array [
-          Object {
-            "arg": 1,
-            "id": "=",
-            "type": "unresolved",
-          },
-          Object {
-            "arg": 1,
-            "id": "*",
-            "type": "unresolved",
-          },
-          Object {
-            "arg": 1,
-            "id": Object {
-              "message": null,
-              "token": Object {
-                "ident": "op",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-            "type": "unresolved",
-          },
-          Object {
-            "argCount": 3,
-            "id": "postfix",
-            "type": "call-message",
-          },
-          Object {
-            "argCount": 1,
-            "id": "postfix",
-            "type": "call-message",
-          },
-          Object {
-            "id": "predicate.op.prec",
-            "temporalIdx": 0,
-            "type": "temporal-if",
-          },
-        ],
-        "3": Array [
-          Object {
-            "arg": 1,
-            "id": "=",
-            "type": "unresolved",
-          },
-          Object {
-            "arg": 1,
-            "id": "+",
-            "type": "unresolved",
-          },
-          Object {
-            "arg": 1,
-            "id": Object {
-              "message": null,
-              "token": Object {
-                "ident": "op",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-            "type": "unresolved",
-          },
-          Object {
-            "argCount": 3,
-            "id": "postfix",
-            "type": "call-message",
-          },
-          Object {
-            "argCount": 1,
-            "id": "postfix",
-            "type": "call-message",
-          },
-          Object {
-            "id": "predicate.op.prec",
-            "temporalIdx": 1,
-            "type": "temporal-if",
-          },
-        ],
-      },
+      "message": Object {},
     },
     "predicate.opstack": Object {
       "after": Array [],
