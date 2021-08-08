@@ -9,7 +9,7 @@ Ingrid is
 
 ## Experimental
 
-Ingrid is part of an ongoing [intentional-dev]() research program and as such is not anywhere near ready for production. But it _is_ kind of fun to play around with some of the ideas of applied intentionality such as rationalization, agreement, and semantic markers.
+Ingrid is part of an ongoing [intentional-dev](http://intentional-dev.com) research program and as such is not anywhere near ready for production. But it _is_ kind of fun to play around with some of the ideas of applied intentionality such as rationalization, agreement, and semantic markers.
 
 ## Selectors and intentions
 
