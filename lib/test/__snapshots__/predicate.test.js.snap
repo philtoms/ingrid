@@ -4,28 +4,23 @@ exports[`predicate snapshot 1`] = `
 Object {
   "api": Object {
     "predicate.op.postfix": Object {
-      "predicate.op.postfix.postfix": Object {
-        "arg": 1,
-        "tidx": 1,
-        "type": "bind",
-      },
-      "predicate.op.postfix.postfix.*": Object {
-        "arg": 2,
+      "predicate.op.postfix.*": Object {
+        "arg": 3,
         "tidx": 0,
         "type": "tag",
       },
-      "predicate.op.postfix.postfix.+": Object {
-        "arg": 2,
+      "predicate.op.postfix.+": Object {
+        "arg": 3,
         "tidx": 1,
         "type": "tag",
       },
-      "predicate.op.postfix.postfix.=": Object {
+      "predicate.op.postfix.=": Object {
         "arg": 1,
         "tidx": 1,
         "type": "tag",
       },
-      "predicate.op.postfix.postfix.[object Object]": Object {
-        "arg": 3,
+      "predicate.op.postfix.op": Object {
+        "arg": 2,
         "tidx": 1,
         "type": "tag",
       },
@@ -139,52 +134,30 @@ Object {
                           "message": Object {
                             "selector": Array [
                               Object {
-                                "alias": null,
-                                "message": Object {
-                                  "selector": Array [
-                                    Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "=",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "*",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    Object {
-                                      "alias": null,
-                                      "message": null,
-                                      "quantifier": null,
-                                      "token": Object {
-                                        "ident": Object {
-                                          "message": null,
-                                          "token": Object {
-                                            "ident": "op",
-                                            "quantifier": null,
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                  ],
-                                },
-                                "quantifier": null,
+                                "message": null,
                                 "token": Object {
-                                  "ident": "postfix",
+                                  "ident": "=",
+                                  "quantifier": null,
                                   "rule": "token",
-                                  "type": "bind",
+                                  "type": "tag",
+                                },
+                              },
+                              Object {
+                                "message": null,
+                                "token": Object {
+                                  "ident": "op",
+                                  "quantifier": null,
+                                  "rule": "token",
+                                  "type": "tag",
+                                },
+                              },
+                              Object {
+                                "message": null,
+                                "token": Object {
+                                  "ident": "*",
+                                  "quantifier": null,
+                                  "rule": "token",
+                                  "type": "tag",
                                 },
                               },
                             ],
@@ -219,52 +192,30 @@ Object {
                           "message": Object {
                             "selector": Array [
                               Object {
-                                "alias": null,
-                                "message": Object {
-                                  "selector": Array [
-                                    Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "=",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "+",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    Object {
-                                      "alias": null,
-                                      "message": null,
-                                      "quantifier": null,
-                                      "token": Object {
-                                        "ident": Object {
-                                          "message": null,
-                                          "token": Object {
-                                            "ident": "op",
-                                            "quantifier": null,
-                                            "rule": "token",
-                                            "type": "tag",
-                                          },
-                                        },
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                  ],
-                                },
-                                "quantifier": null,
+                                "message": null,
                                 "token": Object {
-                                  "ident": "postfix",
+                                  "ident": "=",
+                                  "quantifier": null,
                                   "rule": "token",
-                                  "type": "bind",
+                                  "type": "tag",
+                                },
+                              },
+                              Object {
+                                "message": null,
+                                "token": Object {
+                                  "ident": "op",
+                                  "quantifier": null,
+                                  "rule": "token",
+                                  "type": "tag",
+                                },
+                              },
+                              Object {
+                                "message": null,
+                                "token": Object {
+                                  "ident": "+",
+                                  "quantifier": null,
+                                  "rule": "token",
+                                  "type": "tag",
                                 },
                               },
                             ],
@@ -340,52 +291,30 @@ Object {
                       "message": Object {
                         "selector": Array [
                           Object {
-                            "alias": null,
-                            "message": Object {
-                              "selector": Array [
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "=",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "true",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "alias": null,
-                                  "message": null,
-                                  "quantifier": null,
-                                  "token": Object {
-                                    "ident": Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "push",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                              ],
-                            },
-                            "quantifier": null,
+                            "message": null,
                             "token": Object {
-                              "ident": "postfix",
+                              "ident": "=",
+                              "quantifier": null,
                               "rule": "token",
-                              "type": "bind",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "push",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "true",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
                             },
                           },
                         ],
@@ -457,52 +386,57 @@ Object {
                       "message": Object {
                         "selector": Array [
                           Object {
-                            "alias": null,
-                            "message": Object {
-                              "selector": Array [
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "=",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "false",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "alias": null,
-                                  "message": null,
-                                  "quantifier": null,
-                                  "token": Object {
-                                    "ident": Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "push",
-                                        "quantifier": null,
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                              ],
-                            },
-                            "quantifier": null,
+                            "message": null,
                             "token": Object {
-                              "ident": "postfix",
+                              "ident": "=",
+                              "quantifier": null,
                               "rule": "token",
-                              "type": "bind",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "push",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "false",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "&&",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "opstack.pop",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "call",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
                             },
                           },
                         ],
@@ -538,52 +472,30 @@ Object {
                       "message": Object {
                         "selector": Array [
                           Object {
-                            "alias": null,
-                            "message": Object {
-                              "selector": Array [
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": ">",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "opstack.top.prec",
-                                    "quantifier": null,
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                Object {
-                                  "alias": null,
-                                  "message": null,
-                                  "quantifier": null,
-                                  "token": Object {
-                                    "ident": Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "selector.op.prec",
-                                        "quantifier": "?",
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                              ],
-                            },
-                            "quantifier": null,
+                            "message": null,
                             "token": Object {
-                              "ident": "postfix",
+                              "ident": ">",
+                              "quantifier": null,
                               "rule": "token",
-                              "type": "bind",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "selector.op.prec",
+                              "quantifier": "?",
+                              "rule": "token",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "opstack.top.prec",
+                              "quantifier": null,
+                              "rule": "token",
+                              "type": "tag",
                             },
                           },
                         ],
@@ -619,44 +531,21 @@ Object {
                       "message": Object {
                         "selector": Array [
                           Object {
-                            "alias": null,
-                            "message": Object {
-                              "selector": Array [
-                                Object {
-                                  "message": null,
-                                  "token": Object {
-                                    "ident": "parts",
-                                    "quantifier": "*",
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                                null,
-                                Object {
-                                  "alias": null,
-                                  "message": null,
-                                  "quantifier": null,
-                                  "token": Object {
-                                    "ident": Object {
-                                      "message": null,
-                                      "token": Object {
-                                        "ident": "selector.parts",
-                                        "quantifier": "*",
-                                        "rule": "token",
-                                        "type": "tag",
-                                      },
-                                    },
-                                    "rule": "token",
-                                    "type": "tag",
-                                  },
-                                },
-                              ],
-                            },
-                            "quantifier": null,
+                            "message": null,
                             "token": Object {
-                              "ident": "postfix",
+                              "ident": "parts",
+                              "quantifier": "*",
                               "rule": "token",
-                              "type": "bind",
+                              "type": "tag",
+                            },
+                          },
+                          Object {
+                            "message": null,
+                            "token": Object {
+                              "ident": "selector.parts",
+                              "quantifier": "*",
+                              "rule": "token",
+                              "type": "tag",
                             },
                           },
                         ],
@@ -696,7 +585,7 @@ Object {
                 "arg",
                 "(",
                 "op",
-                "selector",
+                "tag",
                 ")",
                 "?",
               ],
@@ -710,6 +599,10 @@ Object {
   ],
   "exports": Array [],
   "instructions": Object {
+    "&&": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
     "=": Object {
       "immediate": Array [],
       "temporal": Object {},
@@ -718,11 +611,11 @@ Object {
       "immediate": Array [],
       "temporal": Object {},
     },
-    "[object Object]": Object {
+    "arg": Object {
       "immediate": Array [],
       "temporal": Object {},
     },
-    "arg": Object {
+    "call": Object {
       "immediate": Array [],
       "temporal": Object {},
     },
@@ -786,29 +679,15 @@ Object {
             "selector": "=",
           },
           Object {
+            "op": "push-value",
+            "selector": "predicate.push",
+          },
+          Object {
             "op": "push-literal",
             "selector": "true",
           },
           Object {
-            "op": "push-literal",
-            "selector": Object {
-              "message": null,
-              "token": Object {
-                "ident": "push",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-          },
-          Object {
             "argCount": 3,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
-          },
-          Object {
-            "argCount": 1,
             "op": "call-bind",
             "selector": "postfix",
             "temporalIdx": 0,
@@ -851,29 +730,27 @@ Object {
             "selector": "=",
           },
           Object {
+            "op": "push-value",
+            "selector": "predicate.push",
+          },
+          Object {
             "op": "push-literal",
             "selector": "false",
           },
           Object {
             "op": "push-literal",
-            "selector": Object {
-              "message": null,
-              "token": Object {
-                "ident": "push",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
+            "selector": "&&",
           },
           Object {
-            "argCount": 3,
-            "op": "call-bind",
-            "selector": "postfix",
-            "temporalIdx": 0,
+            "op": "push-literal",
+            "selector": "opstack.pop",
           },
           Object {
-            "argCount": 1,
+            "op": "push-literal",
+            "selector": "call",
+          },
+          Object {
+            "argCount": 6,
             "op": "call-bind",
             "selector": "postfix",
             "temporalIdx": 0,
@@ -897,24 +774,10 @@ Object {
         },
         Object {
           "op": "push-literal",
-          "selector": Object {
-            "message": null,
-            "token": Object {
-              "ident": "selector.parts",
-              "quantifier": "*",
-              "rule": "token",
-              "type": "tag",
-            },
-          },
+          "selector": "selector.parts",
         },
         Object {
           "argCount": 2,
-          "op": "call-bind",
-          "selector": "postfix",
-          "temporalIdx": 0,
-        },
-        Object {
-          "argCount": 1,
           "op": "call-bind",
           "selector": "postfix",
           "temporalIdx": 0,
@@ -933,19 +796,11 @@ Object {
         },
         Object {
           "op": "push-literal",
-          "selector": "opstack.top.prec",
+          "selector": "selector.op.prec",
         },
         Object {
           "op": "push-literal",
-          "selector": Object {
-            "message": null,
-            "token": Object {
-              "ident": "selector.op.prec",
-              "quantifier": "?",
-              "rule": "token",
-              "type": "tag",
-            },
-          },
+          "selector": "opstack.top.prec",
         },
         Object {
           "argCount": 3,
@@ -954,15 +809,35 @@ Object {
           "temporalIdx": 0,
         },
         Object {
-          "argCount": 1,
-          "op": "call-bind",
-          "selector": "postfix",
-          "temporalIdx": 0,
-        },
-        Object {
           "op": "pop-value",
         },
+        Object {
+          "op": "call-temporal",
+          "selector": "predicate.push",
+          "temporalIdx": "after",
+        },
       ],
+      "temporal": Object {
+        "after": Array [
+          Object {
+            "op": "call-temporal",
+            "selector": "predicate.opstack",
+            "temporalIdx": 2,
+          },
+          Object {
+            "op": "call-temporal",
+            "selector": "predicate.parts",
+            "temporalIdx": 2,
+          },
+        ],
+      },
+    },
+    "selector.op.prec": Object {
+      "immediate": Array [],
+      "temporal": Object {},
+    },
+    "selector.parts": Object {
+      "immediate": Array [],
       "temporal": Object {},
     },
     "true": Object {
@@ -985,7 +860,7 @@ Object {
               "arg",
               "(",
               "op",
-              "selector",
+              "tag",
               ")",
               "?",
             ],
@@ -1180,33 +1055,19 @@ Object {
                   "ident": "postfix",
                   "message": Array [
                     Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": "=",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": "true",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "push",
-                              "quantifier": null,
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
+                      "ident": "=",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "push",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "true",
+                      "message": null,
+                      "type": "tag",
                     },
                   ],
                   "type": "tag",
@@ -1257,33 +1118,34 @@ Object {
                   "ident": "postfix",
                   "message": Array [
                     Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": "=",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": "false",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "push",
-                              "quantifier": null,
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
+                      "ident": "=",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "push",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "false",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "&&",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "opstack.pop",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "call",
+                      "message": null,
+                      "type": "tag",
                     },
                   ],
                   "type": "tag",
@@ -1311,29 +1173,16 @@ Object {
                   "ident": "postfix",
                   "message": Array [
                     Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": "parts",
-                          "message": null,
-                          "quantifier": "*",
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "selector.parts",
-                              "quantifier": "*",
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
+                      "ident": "parts",
+                      "message": null,
+                      "quantifier": "*",
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "selector.parts",
+                      "message": null,
+                      "quantifier": "*",
+                      "type": "tag",
                     },
                   ],
                   "type": "tag",
@@ -1361,33 +1210,20 @@ Object {
                   "ident": "postfix",
                   "message": Array [
                     Object {
-                      "ident": "postfix",
-                      "message": Array [
-                        Object {
-                          "ident": ">",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": "opstack.top.prec",
-                          "message": null,
-                          "type": "tag",
-                        },
-                        Object {
-                          "ident": Object {
-                            "message": null,
-                            "token": Object {
-                              "ident": "selector.op.prec",
-                              "quantifier": "?",
-                              "rule": "token",
-                              "type": "tag",
-                            },
-                          },
-                          "message": null,
-                          "type": "tag",
-                        },
-                      ],
-                      "type": "bind",
+                      "ident": ">",
+                      "message": null,
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "selector.op.prec",
+                      "message": null,
+                      "quantifier": "?",
+                      "type": "tag",
+                    },
+                    Object {
+                      "ident": "opstack.top.prec",
+                      "message": null,
+                      "type": "tag",
                     },
                   ],
                   "type": "tag",
@@ -1401,6 +1237,15 @@ Object {
     },
   },
   "statements": Object {
+    "&&": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "&&",
+      "ident": "&&",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
     "=": Object {
       "after": Array [],
       "before": Array [],
@@ -1419,36 +1264,20 @@ Object {
       "message": Object {},
       "type": "unresolved",
     },
-    "[object Object]": Object {
-      "after": Array [],
-      "before": Array [],
-      "id": Object {
-        "message": null,
-        "token": Object {
-          "ident": "push",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-      "ident": Object {
-        "message": null,
-        "token": Object {
-          "ident": "push",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-      "is": Array [],
-      "message": Object {},
-      "type": "unresolved",
-    },
     "arg": Object {
       "after": Array [],
       "before": Array [],
       "id": "arg",
       "ident": "arg",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "call": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "call",
+      "ident": "call",
       "is": Array [],
       "message": Object {},
       "type": "unresolved",
@@ -1568,29 +1397,16 @@ Object {
           },
           Object {
             "arg": 1,
+            "id": "predicate.push",
+            "type": "tag",
+          },
+          Object {
+            "arg": 1,
             "id": "true",
             "type": "unresolved",
           },
           Object {
-            "arg": 1,
-            "id": Object {
-              "message": null,
-              "token": Object {
-                "ident": "push",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
-            "type": "unresolved",
-          },
-          Object {
             "argCount": 3,
-            "id": "postfix",
-            "type": "call-message",
-          },
-          Object {
-            "argCount": 1,
             "id": "postfix",
             "type": "call-message",
           },
@@ -1637,29 +1453,31 @@ Object {
           },
           Object {
             "arg": 1,
+            "id": "predicate.push",
+            "type": "tag",
+          },
+          Object {
+            "arg": 1,
             "id": "false",
             "type": "unresolved",
           },
           Object {
             "arg": 1,
-            "id": Object {
-              "message": null,
-              "token": Object {
-                "ident": "push",
-                "quantifier": null,
-                "rule": "token",
-                "type": "tag",
-              },
-            },
+            "id": "&&",
             "type": "unresolved",
           },
           Object {
-            "argCount": 3,
-            "id": "postfix",
-            "type": "call-message",
+            "arg": 1,
+            "id": "opstack.pop",
+            "type": "unresolved",
           },
           Object {
-            "argCount": 1,
+            "arg": 1,
+            "id": "call",
+            "type": "unresolved",
+          },
+          Object {
+            "argCount": 6,
             "id": "postfix",
             "type": "call-message",
           },
@@ -1685,24 +1503,11 @@ Object {
             },
             Object {
               "arg": 1,
-              "id": Object {
-                "message": null,
-                "token": Object {
-                  "ident": "selector.parts",
-                  "quantifier": "*",
-                  "rule": "token",
-                  "type": "tag",
-                },
-              },
+              "id": "selector.parts",
               "type": "unresolved",
             },
             Object {
               "argCount": 2,
-              "id": "postfix",
-              "type": "call-message",
-            },
-            Object {
-              "argCount": 1,
               "id": "predicate.predicate",
               "selector": "postfix",
               "type": "apply-message",
@@ -1713,7 +1518,18 @@ Object {
       "message": Object {},
     },
     "predicate.push": Object {
-      "after": Array [],
+      "after": Array [
+        Object {
+          "id": "predicate.opstack",
+          "temporalIdx": 2,
+          "type": "temporal",
+        },
+        Object {
+          "id": "predicate.parts",
+          "temporalIdx": 2,
+          "type": "temporal",
+        },
+      ],
       "before": Array [],
       "is": Array [
         Object {
@@ -1725,29 +1541,16 @@ Object {
             },
             Object {
               "arg": 1,
-              "id": "opstack.top.prec",
+              "id": "selector.op.prec",
               "type": "unresolved",
             },
             Object {
               "arg": 1,
-              "id": Object {
-                "message": null,
-                "token": Object {
-                  "ident": "selector.op.prec",
-                  "quantifier": "?",
-                  "rule": "token",
-                  "type": "tag",
-                },
-              },
+              "id": "opstack.top.prec",
               "type": "unresolved",
             },
             Object {
               "argCount": 3,
-              "id": "postfix",
-              "type": "call-message",
-            },
-            Object {
-              "argCount": 1,
               "id": "predicate.push",
               "selector": "postfix",
               "type": "apply-message",
@@ -1756,6 +1559,24 @@ Object {
         },
       ],
       "message": Object {},
+    },
+    "selector.op.prec": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "selector.op.prec",
+      "ident": "selector.op.prec",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
+    },
+    "selector.parts": Object {
+      "after": Array [],
+      "before": Array [],
+      "id": "selector.parts",
+      "ident": "selector.parts",
+      "is": Array [],
+      "message": Object {},
+      "type": "unresolved",
     },
     "true": Object {
       "after": Array [],

@@ -321,7 +321,7 @@ Object {
 }
 `;
 
-exports[`resolver aggregation should aggregate tag map 1`] = `
+exports[`resolver aggregation should aggregate selector map 1`] = `
 Object {
   "1": Object {
     "after": Array [],
@@ -447,7 +447,7 @@ Object {
 }
 `;
 
-exports[`resolver aggregation should maintain aggregated tag map 1`] = `
+exports[`resolver aggregation should maintain aggregated selector map 1`] = `
 Object {
   "1": Object {
     "after": Array [],
@@ -478,7 +478,7 @@ Object {
 }
 `;
 
-exports[`resolver aggregation should maintain aggregated tag map 2`] = `
+exports[`resolver aggregation should maintain aggregated selector map 2`] = `
 Object {
   "1": Object {
     "after": Array [],
@@ -536,7 +536,7 @@ Object {
 }
 `;
 
-exports[`resolver aggregation should maintain aggregated tag map 3`] = `
+exports[`resolver aggregation should maintain aggregated selector map 3`] = `
 Object {
   "1": Object {
     "after": Array [],
@@ -616,7 +616,7 @@ Object {
 }
 `;
 
-exports[`resolver aggregation should maintain aggregated tag map 4`] = `
+exports[`resolver aggregation should maintain aggregated selector map 4`] = `
 Object {
   "1": Object {
     "after": Array [],
@@ -747,7 +747,7 @@ Object {
 }
 `;
 
-exports[`resolver alias aliased annon message tag 1`] = `
+exports[`resolver alias aliased annon message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -797,7 +797,7 @@ Object {
 }
 `;
 
-exports[`resolver alias aliased message tag 1`] = `
+exports[`resolver alias aliased message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -905,7 +905,7 @@ Object {
 }
 `;
 
-exports[`resolver alias aliased quantified message tag 1`] = `
+exports[`resolver alias aliased quantified message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -950,11 +950,6 @@ Object {
             "selector": "A1",
             "type": "tag",
           },
-          Object {
-            "id": "B1",
-            "selector": "A1",
-            "type": "tag",
-          },
         ],
       },
     ],
@@ -963,7 +958,7 @@ Object {
 }
 `;
 
-exports[`resolver alias aliased tag as intention 1`] = `
+exports[`resolver alias aliased selector as intention 2`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -984,9 +979,72 @@ Object {
             "selector": "A1",
             "type": "tag",
           },
+          Object {
+            "id": "B1",
+            "selector": "A1",
+            "type": "tag",
+          },
         ],
       },
     ],
+    "message": Object {},
+  },
+}
+`;
+
+exports[`resolver alias selector as aliased message 1`] = `
+Object {
+  "A1": Object {
+    "after": Array [],
+    "before": Array [],
+    "is": Array [],
+    "message": Object {},
+  },
+  "A1.A2": Object {
+    "after": Array [],
+    "before": Array [],
+    "is": Array [],
+    "message": Object {},
+  },
+  "B1": Object {
+    "after": Array [],
+    "before": Array [],
+    "entryPoint": true,
+    "is": Array [
+      Object {
+        "parts": Array [
+          Object {
+            "arg": 1,
+            "id": "B1.X",
+            "type": "tag",
+          },
+          Object {
+            "argCount": 1,
+            "id": "A1.A2",
+            "selector": "A1.A2",
+            "type": "call-message",
+          },
+          Object {
+            "argCount": 0,
+            "id": "B1",
+            "selector": "A1",
+            "temporalIdx": 0,
+            "type": "apply-message",
+          },
+        ],
+      },
+      Object {
+        "id": "B1",
+        "selector": "B1.X",
+        "type": "block",
+      },
+    ],
+    "message": Object {},
+  },
+  "B1.X": Object {
+    "after": Array [],
+    "before": Array [],
+    "is": Array [],
     "message": Object {},
   },
 }
@@ -1078,65 +1136,7 @@ Object {
 }
 `;
 
-exports[`resolver alias tag as aliased message 1`] = `
-Object {
-  "A1": Object {
-    "after": Array [],
-    "before": Array [],
-    "is": Array [],
-    "message": Object {},
-  },
-  "A1.A2": Object {
-    "after": Array [],
-    "before": Array [],
-    "is": Array [],
-    "message": Object {},
-  },
-  "B1": Object {
-    "after": Array [],
-    "before": Array [],
-    "entryPoint": true,
-    "is": Array [
-      Object {
-        "parts": Array [
-          Object {
-            "arg": 1,
-            "id": "B1.X",
-            "type": "tag",
-          },
-          Object {
-            "argCount": 1,
-            "id": "A1.A2",
-            "selector": "A1.A2",
-            "type": "call-message",
-          },
-          Object {
-            "argCount": 0,
-            "id": "B1",
-            "selector": "A1",
-            "temporalIdx": 0,
-            "type": "apply-message",
-          },
-        ],
-      },
-      Object {
-        "id": "B1",
-        "selector": "B1.X",
-        "type": "block",
-      },
-    ],
-    "message": Object {},
-  },
-  "B1.X": Object {
-    "after": Array [],
-    "before": Array [],
-    "is": Array [],
-    "message": Object {},
-  },
-}
-`;
-
-exports[`resolver bindings should select bound tag 1`] = `
+exports[`resolver bindings should select bound selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2151,7 +2151,7 @@ Object {
 }
 `;
 
-exports[`resolver immediate intentions should not resolve nested tag block 1`] = `
+exports[`resolver immediate intentions should not resolve nested selector block 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2246,7 +2246,7 @@ Object {
 }
 `;
 
-exports[`resolver immediate intentions should resolve nested tag block via one dot rule 1`] = `
+exports[`resolver immediate intentions should resolve nested selector block via one dot rule 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2622,7 +2622,7 @@ Object {
 }
 `;
 
-exports[`resolver messages empty message tag 1`] = `
+exports[`resolver messages empty message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2696,7 +2696,7 @@ Object {
 }
 `;
 
-exports[`resolver messages mismatched message tag 1`] = `
+exports[`resolver messages mismatched message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2742,7 +2742,7 @@ Object {
 }
 `;
 
-exports[`resolver messages missing quantifier message tag hint 1`] = `
+exports[`resolver messages missing quantifier message selector hint 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2817,7 +2817,7 @@ Object {
 }
 `;
 
-exports[`resolver quantifiers empty message to + message tag 1`] = `
+exports[`resolver quantifiers empty message to + message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2848,7 +2848,7 @@ Object {
 }
 `;
 
-exports[`resolver quantifiers empty message to optional message tag 1`] = `
+exports[`resolver quantifiers empty message to optional message selector 1`] = `
 Object {
   "A1": Object {
     "after": Array [],
@@ -2958,7 +2958,7 @@ Object {
 }
 `;
 
-exports[`resolver regex selectors as aggregate tag 1`] = `
+exports[`resolver regex selectors as aggregate selector 1`] = `
 Object {
   "/A": Object {
     "after": Array [],
@@ -3158,7 +3158,7 @@ Object {
 }
 `;
 
-exports[`resolver regex selectors as block tag 1`] = `
+exports[`resolver regex selectors as block selector 1`] = `
 Object {
   "/B": Object {
     "after": Array [],
@@ -3320,7 +3320,55 @@ Object {
 }
 `;
 
-exports[`resolver regex selectors as sibling tag 1`] = `
+exports[`resolver regex selectors as selector 1`] = `
+Object {
+  "/A": Object {
+    "after": Array [],
+    "before": Array [],
+    "is": Array [
+      Object {
+        "parts": Array [
+          Object {
+            "id": "/A",
+            "selector": "123",
+            "type": "unresolved",
+          },
+        ],
+      },
+    ],
+    "message": Object {},
+    "type": "regex",
+  },
+  "123": Object {
+    "after": Array [],
+    "before": Array [],
+    "id": "123",
+    "ident": "123",
+    "is": Array [],
+    "message": Object {},
+    "type": "unresolved",
+  },
+  "A1": Object {
+    "after": Array [],
+    "before": Array [],
+    "entryPoint": true,
+    "is": Array [
+      Object {
+        "parts": Array [
+          Object {
+            "id": "A1",
+            "selector": "123",
+            "type": "unresolved",
+          },
+        ],
+      },
+    ],
+    "message": Object {},
+  },
+}
+`;
+
+exports[`resolver regex selectors as sibling selector 1`] = `
 Object {
   "123": Object {
     "after": Array [],
@@ -3381,54 +3429,6 @@ Object {
         "parts": Array [
           Object {
             "id": "A.A1.B",
-            "selector": "123",
-            "type": "unresolved",
-          },
-        ],
-      },
-    ],
-    "message": Object {},
-  },
-}
-`;
-
-exports[`resolver regex selectors as tag 1`] = `
-Object {
-  "/A": Object {
-    "after": Array [],
-    "before": Array [],
-    "is": Array [
-      Object {
-        "parts": Array [
-          Object {
-            "id": "/A",
-            "selector": "123",
-            "type": "unresolved",
-          },
-        ],
-      },
-    ],
-    "message": Object {},
-    "type": "regex",
-  },
-  "123": Object {
-    "after": Array [],
-    "before": Array [],
-    "id": "123",
-    "ident": "123",
-    "is": Array [],
-    "message": Object {},
-    "type": "unresolved",
-  },
-  "A1": Object {
-    "after": Array [],
-    "before": Array [],
-    "entryPoint": true,
-    "is": Array [
-      Object {
-        "parts": Array [
-          Object {
-            "id": "A1",
             "selector": "123",
             "type": "unresolved",
           },

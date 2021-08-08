@@ -308,7 +308,7 @@ Array [
 ]
 `;
 
-exports[`compiler intentions aggregate tag intentions 1`] = `
+exports[`compiler intentions aggregate selector intentions 1`] = `
 Array [
   Object {
     "op": "apply-value",
@@ -436,7 +436,7 @@ Object {
 }
 `;
 
-exports[`compiler messages aggregate tag messages 1`] = `
+exports[`compiler messages aggregate selector messages 1`] = `
 Object {
   "immediate": Array [],
   "temporal": Object {
@@ -568,7 +568,7 @@ Array [
 ]
 `;
 
-exports[`compiler quantifier one or more tag values 1`] = `
+exports[`compiler quantifier one or more selector values 1`] = `
 Object {
   "1": Object {
     "immediate": Array [],
@@ -718,7 +718,7 @@ Object {
 }
 `;
 
-exports[`compiler regex selectors as aggregate tag 1`] = `
+exports[`compiler regex selectors as aggregate selector 1`] = `
 Object {
   "/A": Object {
     "immediate": Array [
@@ -843,7 +843,7 @@ Object {
 }
 `;
 
-exports[`compiler regex selectors as block tag 1`] = `
+exports[`compiler regex selectors as block selector 1`] = `
 Object {
   "/B": Object {
     "immediate": Array [
@@ -942,7 +942,34 @@ Object {
 }
 `;
 
-exports[`compiler regex selectors as sibling tag 1`] = `
+exports[`compiler regex selectors as selector 1`] = `
+Object {
+  "/A": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+  "123": Object {
+    "immediate": Array [],
+    "temporal": Object {},
+  },
+  "A1": Object {
+    "immediate": Array [
+      Object {
+        "op": "apply-literal",
+        "selector": "123",
+      },
+    ],
+    "temporal": Object {},
+  },
+}
+`;
+
+exports[`compiler regex selectors as sibling selector 1`] = `
 Object {
   "123": Object {
     "immediate": Array [],
@@ -976,33 +1003,6 @@ Object {
     "temporal": Object {},
   },
   "A.A1.B": Object {
-    "immediate": Array [
-      Object {
-        "op": "apply-literal",
-        "selector": "123",
-      },
-    ],
-    "temporal": Object {},
-  },
-}
-`;
-
-exports[`compiler regex selectors as tag 1`] = `
-Object {
-  "/A": Object {
-    "immediate": Array [
-      Object {
-        "op": "apply-literal",
-        "selector": "123",
-      },
-    ],
-    "temporal": Object {},
-  },
-  "123": Object {
-    "immediate": Array [],
-    "temporal": Object {},
-  },
-  "A1": Object {
     "immediate": Array [
       Object {
         "op": "apply-literal",

@@ -319,7 +319,7 @@ Array [
 ]
 `;
 
-exports[`parser full tag 1`] = `
+exports[`parser full selector 1`] = `
 Array [
   Object {
     "intentions": Array [],
@@ -724,7 +724,7 @@ Array [
 ]
 `;
 
-exports[`parser regex tag 1`] = `
+exports[`parser regex selector 1`] = `
 Array [
   Object {
     "intentions": Array [],
@@ -743,7 +743,7 @@ Array [
 ]
 `;
 
-exports[`parser regex tag ref 1`] = `
+exports[`parser regex selector ref 1`] = `
 Array [
   Object {
     "intentions": Array [
@@ -768,6 +768,81 @@ Array [
         "token": Object {
           "ident": "A",
           "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser selector 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser selector aggregation 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "b",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "c",
+          "quantifier": null,
+          "rule": "token",
+          "type": "tag",
+        },
+      },
+    ],
+  },
+]
+`;
+
+exports[`parser selector quantifier 1`] = `
+Array [
+  Object {
+    "intentions": Array [],
+    "selectors": Array [
+      Object {
+        "message": null,
+        "token": Object {
+          "ident": "a",
+          "quantifier": "*",
           "rule": "token",
           "type": "tag",
         },
@@ -874,81 +949,6 @@ Array [
         "token": Object {
           "ident": "\\\\'b",
           "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-    ],
-  },
-]
-`;
-
-exports[`parser tag 1`] = `
-Array [
-  Object {
-    "intentions": Array [],
-    "selectors": Array [
-      Object {
-        "message": null,
-        "token": Object {
-          "ident": "a",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-    ],
-  },
-]
-`;
-
-exports[`parser tag aggregation 1`] = `
-Array [
-  Object {
-    "intentions": Array [],
-    "selectors": Array [
-      Object {
-        "message": null,
-        "token": Object {
-          "ident": "a",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-      Object {
-        "message": null,
-        "token": Object {
-          "ident": "b",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-      Object {
-        "message": null,
-        "token": Object {
-          "ident": "c",
-          "quantifier": null,
-          "rule": "token",
-          "type": "tag",
-        },
-      },
-    ],
-  },
-]
-`;
-
-exports[`parser tag quantifier 1`] = `
-Array [
-  Object {
-    "intentions": Array [],
-    "selectors": Array [
-      Object {
-        "message": null,
-        "token": Object {
-          "ident": "a",
-          "quantifier": "*",
           "rule": "token",
           "type": "tag",
         },

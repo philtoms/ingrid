@@ -497,7 +497,7 @@ Object {
 }
 `;
 
-exports[`parser statement alias tag + message 1`] = `
+exports[`parser statement alias selector + message 1`] = `
 Object {
   "api": Object {
     "A1": Object {
@@ -531,7 +531,7 @@ Object {
 }
 `;
 
-exports[`parser statement alias tag 1`] = `
+exports[`parser statement alias selector 1`] = `
 Object {
   "A1": Object {
     "aliasMap": Object {
@@ -601,7 +601,7 @@ Object {
 }
 `;
 
-exports[`parser statement blocks tag block 1`] = `
+exports[`parser statement blocks selector block 1`] = `
 Object {
   "A1": Object {
     "aliasMap": Object {},
@@ -798,7 +798,7 @@ Object {
 }
 `;
 
-exports[`parser statement message selectors aggregate message tag  1`] = `
+exports[`parser statement message selectors aggregate message selector  1`] = `
 Object {
   "A1": Object {
     "A1.1": Object {
@@ -815,7 +815,7 @@ Object {
 }
 `;
 
-exports[`parser statement message selectors nested message tag 1`] = `
+exports[`parser statement message selectors nested message selector 1`] = `
 Object {
   "A1": Object {
     "A1.A2": Object {
@@ -837,7 +837,7 @@ Object {
 }
 `;
 
-exports[`parser statement message selectors tag message 1`] = `
+exports[`parser statement message selectors selector message 1`] = `
 Object {
   "A1": Object {
     "A1.1": Object {
@@ -918,7 +918,7 @@ Object {
 }
 `;
 
-exports[`parser statement quantifier quantifier message tag 1`] = `
+exports[`parser statement quantifier quantifier message selector 1`] = `
 Object {
   "api": Object {
     "A1": Object {
@@ -951,7 +951,7 @@ Object {
 }
 `;
 
-exports[`parser statement quantifier quantifier tag + quantifier message 1`] = `
+exports[`parser statement quantifier quantifier selector + quantifier message 1`] = `
 Object {
   "api": Object {
     "A1": Object {
@@ -986,7 +986,7 @@ Object {
 }
 `;
 
-exports[`parser statement quantifier quantifier tag 1`] = `
+exports[`parser statement quantifier quantifier selector 1`] = `
 Object {
   "A1": Object {
     "aliasMap": Object {},
